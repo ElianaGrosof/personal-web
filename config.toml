@@ -2,6 +2,10 @@ baseURL = "/"
 languageCode = "en-us"
 theme = "raditian-free-hugo-theme"
 
+[build]
+  useResourceCacheWhen = "fallback"
+  writeStats = false
+
 # Plugins
 [params.plugins]
 
@@ -69,17 +73,8 @@ theme = "raditian-free-hugo-theme"
 
 [params]
 
-  sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
-
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
 
   [params.logo]
-    text1 = "Andreas"
-    text2 = "Ellure"
-
-  [params.footer]
-      copyright = "© Raditian. All rights reserved."
-      [params.footer.radity_logo]
-        x = "img/general/design-and-code-radity.png"
-        _2x = "img/general/design-and-code-radity@2x.png"
-        alt = "Design & Code - Radity"
+    text1 = "Eliana"
+    text2 = "Grosof"

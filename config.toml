@@ -2,10 +2,6 @@ baseURL = "/"
 languageCode = "en-us"
 theme = "raditian-free-hugo-theme"
 
-[build]
-  #useResourceCacheWhen = "fallback"
-  #writeStats = false
-
 # Plugins
 [params.plugins]
 
@@ -73,8 +69,10 @@ theme = "raditian-free-hugo-theme"
 
 [params]
 
+  sections = ["about", "education", "blog", "projects", "resume"]
+
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
 
   [params.logo]
-    text1 = "Eliana"
-    text2 = "Grosof"
+
+  [params.footer]

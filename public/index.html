@@ -29,7 +29,7 @@
 
 <title></title>
 <style>
-     
+
     .rad-fade-in {
         will-change: opacity, transform;
         animation-name: rad-fade-in-fallback;
@@ -72,7 +72,7 @@
         }
     }
 
-     
+
     .rad-fade-in-long {
         will-change: opacity, transform;
         animation-name: rad-fade-in-long-fallback;
@@ -119,7 +119,7 @@
         }
     }
 
-     
+
     .rad-fade-down {
         will-change: opacity, transform;
         animation-name: rad-fade-down-fallback;
@@ -168,7 +168,7 @@
         }
     }
 
-     
+
     .rad-scale-down {
         will-change: opacity, transform;
         animation-name: rad-scale-down-fallback;
@@ -226,8 +226,9 @@
 
 <link rel="stylesheet" href="/css/custom.css"/>
 
-
-    
+<!-- icon stylesheet stuff -->
+<script src="https://kit.fontawesome.com/ffb349db1a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css">
 
 
 </head>
@@ -237,11 +238,14 @@
 	<header class="header fixed-top rad-animation-group" id="header">
   <div class="container rad-fade-in">
     <nav class="navbar navbar-expand-lg navbar-light p-0">
+		<!--
       <a class="navbar-brand" href="/">
         <span>Eliana</span>
         <span>Grosof</span>
-        
+
       </a>
+		-->
+
       <button
         class="navbar-toggler"
         type="button"
@@ -257,33 +261,33 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-lg-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/">HOME</a>
+            <a class="nav-link" href="/">home</a>
           </li>
-          
+
           <li class="nav-item">
             <a data-scroll class="nav-link" href="#about"
-              >ABOUT</a
+              >about</a
             >
           </li>
-          
+
           <li class="nav-item">
             <a data-scroll class="nav-link" href="#projects"
-              >PROJECTS</a
+              >projects</a
             >
           </li>
-          
+
           <li class="nav-item">
             <a data-scroll class="nav-link" href="#blog"
-              >BLOG</a
+              >blog</a
             >
           </li>
-          
-          <li class="nav-item">
-            <a data-scroll class="nav-link" href="#resume"
-              >RESUME</a
-            >
-          </li>
-          
+
+					<li class="nav-item">
+						<a data-scroll class="nav-link" href="#resume"
+							>resume</a
+						>
+					</li>
+
         </ul>
       </div>
     </nav>
@@ -291,13 +295,252 @@
 </header>
 
 
-	
+
+
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="/img/showcase/showcase.png"
+      data-srcset="/img/showcase/showcase.png 1x, /img/showcase/showcase@2x.png 2x"
+      alt=""
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          Hello, I’m Eliana.
+					 <!--
+          <br />
+          <span
+            >Aspiring Data Scientist/Data Analyst Seeking Jobs in New York City or Remote</span
+          >
+				 -->
+        </h1>
+        <p class="lead">
+					I am an aspiring data scientist / data analyst seeking jobs in New York City or remote work. <br /> <br />
+					Find me on
+					<a href= "https://www.linkedin.com/in/elianagrosof"> LinkedIn </a> ,
+					<a href= "https://medium.com/data-explained"> Medium </a>,
+					<a href= "https://github.com/ElianaGrosof"> Github </a>, and
+					<a href ="https://public.tableau.com/profile/eliana1304#!/"> Tableau Public</a>.
+      </div>
+    </div>
+
+  <!--  <div class="row platform-links"> -->
+      <div class="col-12">
+
+        <a href="https://www.linkedin.com/in/elianagrosof" target="_blank"
+          ><i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color:black"></i
+        ></a> &ensp;&ensp;
+
+				<a href="https://medium.com/data-explained" target="_blank"
+					><i class="fab fa-medium social-icon fa-3x" aria-hidden="true" style="color:black"></i
+				></a> &ensp;&ensp;
+
+        <a href="https://github.com/ElianaGrosof" target="_blank"
+          ><i class="fa fa-github fa-3x" aria-hidden="true" style="color:black"></i
+        ></a> &ensp; &ensp;
+
+				<a href="https://public.tableau.com/profile/eliana1304#!/" target="_blank"
+				><i class="fa fa-line-chart fa-3x" aria-hidden="true" style="color:black"></i
+					></a> &ensp; &ensp;
+
+
+      </div>
+    <!-- </div> -->
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="/img/showcase/showcase-mobile.jpg"
+      alt=""
+    />
+  </div>
+</section>
+
+
+
+
+<section class="section rad-animation-group pb-0" id="about">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="about__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="/img/who-am-i/eliana_edited.jpg"
+          data-srcset="/img/who-am-i/eliana_edited.jpg 1x"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>About Me</h2>
+        <p class="lead">
+          <p class="lead">
+						I am a recent college graduate passionate about using data science for good. I have worked on projects related to computer security and education, housing policy, and machine learning.
+					</p><p class="lead">
+						I graduated from Oberlin College in May 2020 with a double major in Computer Science and Politics. My social science background adds nuance and perspective to my projects.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2>Education</h2>
+                <div class="row pt-2 pt-md-4">
+
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2016-2020</div>
+                            <div class="education__title">Oberlin College</div>
+                            <div class="education__degree">
+                                Bachelor of Arts (B.A.), Computer Science and Politics (double major)
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      Projects
+    </h2>
+    <div class="row row--padded rad-animation-group rad-fade-down">
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="/img/works/swissfintech.jpg"
+          data-srcset="/img/works/swissfintech.jpg 1x, /img/works/swissfintech@2x.jpg 2x"
+          alt="Swiss Fintech Website"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Swiss Fintech Website</h3>
+        <p class="lead">
+          The Swiss Finance &#43; Technology Association is the leading FinTech hub in Switzerland.
+        </p>
+        <a href="/" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+
+    </div>
+
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Robo Advisor</h3>
+        <p class="lead">
+          Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard.
+        </p>
+        <a href="/" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-forward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="/img/works/robo-advisor.jpg"
+          data-srcset="/img/works/robo-advisor.jpg 1x, /img/works/robo-advisor@2x.jpg 2x"
+          alt="Robo Advisor"
+        />
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section rad-animation-group pb-0" id="blog">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="about__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="/img/blog/icon.png"
+          data-srcset="/img/blog/icon.png 1x"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>Blog</h2>
+        <p class="lead">
+          <p class="lead">
+						You can find my blog on <a href="https://medium.com/data-explained">Medium</a>.
+					</p> <p class="lead">
+					<i><b> Don't know where to start? Try reading: </b></i> </br>
+
+						<div class="experience__title" style="width:image width px; text-align:center;">UpSetR is the Greatest Set Visualization Since the Venn Diagram</div>
+						<a href= https://medium.com/data-explained/upsetr-is-the-greatest-set-visualization-since-the-venn-diagram-8bccbaef698a>
+						<img
+				      class="lozad img-responsive img-clip-right-backward"
+				      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+				      data-src="/img/blog/upsetr_viz.png"
+				      data-srcset="/img/blog/upsetr_viz.png 1x"
+				      alt="UpSetR is the Greatest Set Visualization Since the Venn Diagram"
+							style="padding-bottom:0.5em;"
+				    /> </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- iframe src="img/resume/7-15-20_resume.pdf" frameborder="0" height="100%" width="100%"> </iframe> -->
+
+
+<section id=resume>
+		<div id="adobe-dc-view" style="width: 800px;"></div>
+		<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+		<script type="text/javascript">
+		document.addEventListener("adobe_dc_view_sdk.ready", function () {
+			var adobeDCView = new AdobeDC.View({
+				clientId: "9de8224394d04f75b379486a56dd5f36",
+				divId: "adobe-dc-view"
+			});
+			adobeDCView.previewFile({
+				content: { location: { url: "img/resume/" } },
+				metaData: { fileName: "7-15-20_resume.pdf" }
+			}, {
+				embedMode: "IN_LINE",
+				showDownloadPDF: false,
+				showPrintPDF: false
+			});
+		});
+	</script>
+</section>
 
 	<footer class="footer">
   <div class="container">
     <div class="footer__left">
       <div class="footer__copy">
-        
+        Copyright Eliana Grosof 2020. All rights reserved.
       </div>
     </div>
     <div class="footer__links">
@@ -305,31 +548,31 @@
         <li class="nav-item">
           <a class="nav-link" href="/">HOME</a>
         </li>
-        
+
         <li class="nav-item">
-          <a class="nav-link" href="/">ABOUT</a>
+          <a class="nav-link" href="#about">ABOUT</a>
         </li>
-        
+
         <li class="nav-item">
-          <a class="nav-link" href="/">PROJECTS</a>
+          <a class="nav-link" href="#projects">PROJECTS</a>
         </li>
-        
+
         <li class="nav-item">
-          <a class="nav-link" href="/">BLOG</a>
+          <a class="nav-link" href="https://medium.com/data-explained">BLOG</a>
         </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="/">RESUME</a>
-        </li>
-        
+
+				<li class="nav-item">
+					<a class="nav-link" href="/">RESUME</a>
+				</li>
+
       </ul>
     </div>
     <div class="footer__right">
       <a href="https://radity.com/"
         ><img
-          src="/"
-          srcset="/ 1x, / 2x"
-          alt=""
+          src="/img/general/design-and-code-radity.png"
+          srcset="/img/general/design-and-code-radity.png 1x, /img/general/design-and-code-radity@2x.png 2x"
+          alt="Design &amp; Code - Radity"
       /></a>
     </div>
   </div>
@@ -342,7 +585,7 @@
     var observer = window.lozad(".lozad", {
       rootMargin: window.innerHeight / 2 + "px 0px",
       threshold: 0.01
-    }); 
+    });
     observer.observe();
   });
 </script>
@@ -353,7 +596,7 @@
 <script src='/js/library/fontfaceobserver.js'></script>
 <script>
   (function(w) {
-    
+
     if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
       return;
     }

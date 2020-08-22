@@ -3,8 +3,8 @@ languageCode = "en-us"
 theme = "raditian-free-hugo-theme"
 
 [build]
-  useResourceCacheWhen = "fallback"
-  writeStats = false
+  #useResourceCacheWhen = "fallback"
+  #writeStats = false
 
 # Plugins
 [params.plugins]

@@ -1,2 +1,2 @@
 # personal-web
-try 2 of personal website
+personal website

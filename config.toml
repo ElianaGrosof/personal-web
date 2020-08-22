@@ -2,6 +2,9 @@ baseURL = "/"
 languageCode = "en-us"
 theme = "raditian-free-hugo-theme"
 
+
+disableKinds = ["taxonomy", "page" , "taxonomy" , "taxonomyTerm" , "RSS"]
+
 # Plugins
 [params.plugins]
 
@@ -69,10 +72,8 @@ theme = "raditian-free-hugo-theme"
 
 [params]
 
-  sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
+  sections = ["about", "projects", "blog", "resume"]
+
+  #sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
 
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
-
-  [params.logo]
-
-  [params.footer]

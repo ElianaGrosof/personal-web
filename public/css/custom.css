@@ -1,1 +1,22 @@
 /* You can customize theme styles here */
+.resize {   
+  width: auto;
+  display: inline;    
+  margin: 10px;
+}
+
+.width30 {
+  width: 30%; 
+  height: auto;    
+}
+
+
+.width50 {
+  width: 50%;
+  height: auto;    
+}
+
+.right {
+ float: right;
+ padding: 0 20px 20px 0;
+}

@@ -301,9 +301,9 @@
         <p class="lead"><h3>
 					I am an aspiring data scientist / data analyst seeking jobs in New York City or remote work. <br/><br/>
 					Find me on
-					<a href= "https://www.linkedin.com/in/elianagrosof">LinkedIn</a> ,
+					<a href= "https://www.linkedin.com/in/elianagrosof">LinkedIn</a>,
 					<a href= "https://medium.com/data-explained">Medium</a>,
-					<a href= "https://github.com/ElianaGrosof">Github</a>, and
+					<a href= "https://github.com/ElianaGrosof">GitHub</a>, and
 					<a href= "https://public.tableau.com/profile/eliana1304#!/">Tableau Public</a>. 
                     </h3>
           </p>
@@ -482,9 +482,7 @@
   </div>
 </section>
 
-<!-- iframe src="img/resume/7-15-20_resume.pdf" frameborder="0" height="100%" width="100%"> </iframe> -->
-
-
+<!-- 
 <section id=resume>
 		<div id="adobe-dc-view" style="width: 800px; text-align:center;"></div>
 		<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -503,7 +501,20 @@
 				showPrintPDF: false
 			});
 		});
-	</script>
+	</script> -->
+    
+    <div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "9de8224394d04f75b379486a56dd5f36", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+			content:{location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+			metaData:{fileName: "7-15-20_resume.pdf"}
+		}, {embedMode: "SIZED_CONTAINER"});
+	});
+    </script>
+    
 </section>
 
 	<footer class="footer">

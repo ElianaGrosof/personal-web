@@ -1,0 +1,43 @@
+{{ if .Site.Data.homepage.projects.enable }}
+<section id="projects" class="section rad-animation-group pb-0">
+  <div class="container rad-fade-down">
+    <h2 style='text-align: center;'>
+      {{ .Site.Data.homepage.projects.title }} <!-- this is literally "Projects" -->
+    </h2></a>
+    <p class="lead">
+      {{ .Site.Data.homepage.projects.description }}
+    </p>
+
+<!--
+    3 x 1 row of projects. If you want to add another row of 3, just:
+    1) copy and paste the code below
+    2) change "set1" to "set2".
+    3) edit "set2" in homepage.yml
+-->
+<div class="row d-flex flex-column-reverse flex-md-row">
+   {{ range .Site.Data.homepage.projects.set1 }}
+   <p class="lead">
+     <div class="experience__title" style="width:image width px;">
+       <a href= "{{ .URL | absURL }}"> {{ .title }} </a>
+    </div>
+  </p>
+  <p class="lead">
+    {{ .description }}
+  </p>
+   <div class="col-sm-4">
+     <a href="{{ .URL | absURL }}">
+     <img
+       class="lozad img-responsive"
+       src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+       data-src="{{ .image.x | absURL }}"
+       data-srcset="{{ .logo.x | absURL }} 1x"
+       alt="{{ .alt }}"
+     />
+     </a>
+  </div>
+  {{ end }}
+</div>
+</section>
+{{ end }}
+
+<!-- set 2 of projects goes here -->

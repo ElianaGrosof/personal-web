@@ -75,6 +75,54 @@ education:
       year: "2016-2020"
       degree: "Bachelor of the Arts, Computer Science and Politics"
 
+# projects
+projects:
+  enable: true
+  section_title: "Projects"
+  description: '<p class="lead" style='text-align: center'>
+        Selected Portfolio Projects
+        </p>'
+
+
+  set1:
+    - title: "Project 1"
+      description: "Project 1's description."
+      image: "img/project1.png"
+      URL: "github.com/Project_1"
+      alt: "alt"
+
+    - title: "Project 2"
+      description: "Project 2's description."
+      image: "img/project2.png"
+      URL: "github.com/Project_2"
+      alt: "alt"
+
+    - title: "Project 3"
+      description: "Project 3's description."
+      image: "img/project3.png"
+      URL: "github.com/Project_3"
+      alt: "alt"
+
+  set2:
+    - title: "Project 4"
+      description: "Project 4's description."
+      image: "img/project4.png"
+      URL: "github.com/Project_4"
+      alt: "alt"
+
+    - title: "Project 5"
+      description: "Project 5's description."
+      image: "img/project5.png"
+      URL: "github.com/Project_5"
+      alt: "alt"
+
+    - title: "Project 6"
+      description: "Project 6's description."
+      image: "img/project3.png"
+      URL: "github.com/Project_3"
+      alt: "alt"
+
+
 # experience
 experience:
   enable: true

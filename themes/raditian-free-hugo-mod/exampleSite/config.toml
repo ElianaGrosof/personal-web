@@ -79,10 +79,16 @@ theme = "raditian-free-hugo-mod"
 
 
 [params]
-  sections = ["about", "projects", "blog", "resume"]
+  sections = ["home", "about", "projects", "blog", "resume"]
   #sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
 
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+
+  [params.social_links]
+  linkedin = "https://www.linkedin.com/in/elianagrosof"
+  medium = "https://medium.com/data-explained"
+  github = "https://github.com/ElianaGrosof"
+  tableau = "https://public.tableau.com/profile/eliana1304#!/"
 
   [params.full_name]
   normal = "Eliana Grosof"

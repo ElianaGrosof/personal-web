@@ -1,0 +1,47 @@
+{{ if .Site.Data.homepage.home.enable }}
+<section class="section section--border-bottom" id="home">
+  <div class="container">
+    <h1 class="rad-animation-group rad-fade-down text-center">
+      Hello, I'm Eliana.
+    </h1>
+    <div class="row rad-animation-group rad-fade-down">
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto text-center">
+        <p class="lead"><h3>
+					I am an aspiring data scientist / data analyst seeking jobs in New York City or remote work. <br/><br/>
+					Find me on
+					<a href= "{{ .Site.Params.social_links.linkedin }}">LinkedIn</a>,
+					<a href= "{{ .Site.Params.social_links.medium }}">Medium</a>,
+					<a href= "{{ .Site.Params.social_links.github }}">GitHub</a>, and
+					<a href= "{{ .Site.Params.social_links.tableau }}">Tableau Public</a>.
+          </h3>
+          </p>
+        <div class="col-12">
+
+        <a href="{{ .Site.Params.social_links.linkedin }}" target="_blank"
+          ><i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color:black"></i
+        ></a> &ensp;&ensp;
+
+				<a href= "{{ .Site.Params.social_links.medium }}" target="_blank"
+					><i class="fab fa-medium social-icon fa-3x" aria-hidden="true" style="color:black"></i
+				></a> &ensp;&ensp;
+
+        <a href= "{{ .Site.Params.social_links.github }}" target="_blank"
+          ><i class="fa fa-github fa-3x" aria-hidden="true" style="color:black"></i
+        ></a> &ensp; &ensp;
+
+				<a href= "{{ .Site.Params.social_links.tableau }}" target="_blank"
+				><i class="fa fa-line-chart fa-3x" aria-hidden="true" style="color:black"></i
+					></a> &ensp; &ensp;
+      </div>
+
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-backwards'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="/img/homepage/hobby_icon.png"
+          data-srcset="/img/homepage/hobby_icon.png 1x"
+          alt="Hobbies"
+        />
+      </div>
+  </div>

@@ -1,277 +1,254 @@
-# showcase
 showcase:
   enable: true
-  title: "Hello, I’m Andreas."
-  subtitle: "Front-End Developer"
-  description: "I work at <a target='_blank' href='https://radity.com/'>Radity</a>, a software development company in Switzerland. And I am a Raditian. You get the idea where theme name comes from. Keep cool, stay in touch. You can download this theme from <a target='_blank' href='https://github.com/radity/raditian-free-hugo-theme'>github</a>."
+  title: 'Hello, I’m Andreas.'
+  subtitle: Front-End Developer
+  description: >-
+    I work at <a target='_blank' href='https://radity.com/'>Radity</a>, a
+    software development company in Switzerland. And I am a Raditian. You get
+    the idea where theme name comes from. Keep cool, stay in touch. You can
+    download this theme from <a target='_blank'
+    href='https://github.com/radity/raditian-free-hugo-theme'>github</a>.
   image:
-    x: "img/showcase/showcase.png"
-    _2x: "img/showcase/showcase@2x.png"
+    x: img/showcase/showcase.png
+    _2x: img/showcase/showcase@2x.png
   imageMobile:
-    x: "img/showcase/showcase-mobile.jpg"
-
+    x: img/showcase/showcase-mobile.jpg
   button:
-    icon: "icon-mail-fill"
-    btnText: "Contact"
-    URL: "https://radity.com/en/contact/"
-
-# not using these
-  socialLinks:
-    - icon: "linkedin"
-      URL: "https://www.linkedin.com/company/radity/"
-
-    - icon: "github"
-      URL: "https://github.com/radity"
-
-    - icon: "twitter"
-      URL: "https://twitter.com/radity"
-
-    - icon: "dribbble"
-      URL: "https://dribbble.com/radity"
-
-    - icon: "behance"
-      URL: "https://www.behance.net/radity-digital"
-
-    - icon: "youtube"
-      URL: "https://www.youtube.com/channel/UCojEc6SPO-W1_CoeHhK9-Zw"
-
-    - icon: "instagram"
-      URL: "https://www.instagram.com/teamradity/"
-
-    - icon: "facebook"
-      URL: "https://www.facebook.com/raditycom/"
-
-    - icon: "codepen"
-      URL: "#"
-
-    - icon: "yelp"
-      URL: "https://www.yelp.com/"
-
-# about
+    icon: icon-mail-fill
+    btnText: Contact
+    URL: 'https://radity.com/en/contact/'
+socialLinks:
+  - icon: linkedin
+    URL: 'https://www.linkedin.com/company/radity/'
+  - icon: github
+    URL: 'https://github.com/radity'
+  - icon: twitter
+    URL: 'https://twitter.com/radity'
+  - icon: dribbble
+    URL: 'https://dribbble.com/radity'
+  - icon: behance
+    URL: 'https://www.behance.net/radity-digital'
+  - icon: youtube
+    URL: 'https://www.youtube.com/channel/UCojEc6SPO-W1_CoeHhK9-Zw'
+  - icon: instagram
+    URL: 'https://www.instagram.com/teamradity/'
+  - icon: facebook
+    URL: 'https://www.facebook.com/raditycom/'
+  - icon: codepen
+    URL: '#'
+  - icon: yelp
+    URL: 'https://www.yelp.com/'
 about:
   enable: true
-  title: "About Me"
-  content: '<p class="lead">
-    I am a recent college graduate passionate about using data science for good.
-    I have worked on projects related to computer security and education, housing policy, and machine learning.
-    </p>
-    <p class="lead">
-    I graduated from Oberlin College in May 2020 with a double major in Computer Science and Politics.
-    </p>
-    <p class="lead">
-    My hobbies include rock climbing, social dancing, including swing, blues, and
-    salsa, and going to concerts and other arts events.
-    </p>'
+  title: About Me
+  content: >-
+    <p class="lead"> I am a recent college graduate passionate about using data
+    science for good. I have worked on projects related to computer security and
+    education, housing policy, and machine learning. </p> <p class="lead"> I
+    graduated from Oberlin College in May 2020 with a double major in Computer
+    Science and Politics. </p> <p class="lead"> My hobbies include rock
+    climbing, social dancing, including swing, blues, and salsa, and going to
+    concerts and other arts events. </p>
   image:
-    x: "/img/who-am-i/eliana_edited.jpg"
-    _2x: ""
-
-# education
+    x: /img/who-am-i/eliana_edited.jpg
+    _2x: ''
 education:
   enable: true
-  title: "Education"
+  title: Education
   items:
-    - university: "Oberlin College"
-      year: "2016-2020"
-      degree: "Bachelor of the Arts, Computer Science and Politics"
-
-# projects
+    - university: Oberlin College
+      year: 2016-2020
+      degree: 'Bachelor of the Arts, Computer Science and Politics'
+    - university: Oberlin College
+      year: 2016-2020
+      degree: 'Bachelor of the Arts, Computer Science and Politics'
 projects:
   enable: true
-  section_title: "Projects"
-  description: '<p class="lead" style='text-align: center'>
-        Selected Portfolio Projects
-        </p>'
-
-
+  section_title: Projects
+  description: Selected Portfolio Projects
   set1:
-    - title: "Project 1"
-      description: "Project 1's description."
-      image: "img/project1.png"
-      URL: "github.com/Project_1"
-      alt: "alt"
-
-    - title: "Project 2"
-      description: "Project 2's description."
-      image: "img/project2.png"
-      URL: "github.com/Project_2"
-      alt: "alt"
-
-    - title: "Project 3"
-      description: "Project 3's description."
-      image: "img/project3.png"
-      URL: "github.com/Project_3"
-      alt: "alt"
-
+    - title: Project 1
+      description: Project 1's description.
+      image: img/homepage/watercolorblue.jpg
+      URL: github.com/Project_1
+      alt: alt
+    - title: Project 2
+      description: Project 2's description.
+      image: img/homepage/pexels-pixabay-373543.jpg
+      URL: github.com/Project_2
+      alt: alt
+    - title: Project 3
+      description: Project 3's description.
+      image: img/homepage/mult_lite_9.jpg
+      URL: github.com/Project_3
+      alt: alt
   set2:
-    - title: "Project 4"
-      description: "Project 4's description."
-      image: "img/project4.png"
-      URL: "github.com/Project_4"
-      alt: "alt"
-
-    - title: "Project 5"
-      description: "Project 5's description."
-      image: "img/project5.png"
-      URL: "github.com/Project_5"
-      alt: "alt"
-
-    - title: "Project 6"
-      description: "Project 6's description."
-      image: "img/project3.png"
-      URL: "github.com/Project_3"
-      alt: "alt"
-
-
-# experience
+    - title: Project 4
+      description: Project 4's description.
+      image: img/project4.png
+      URL: github.com/Project_4
+      alt: alt
+    - title: Project 5
+      description: Project 5's description.
+      image: img/project5.png
+      URL: github.com/Project_5
+      alt: alt
+    - title: Project 6
+      description: Project 6's description.
+      image: img/project3.png
+      URL: github.com/Project_3
+      alt: alt
 experience:
   enable: true
-  title: "Experience"
-  description: "Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives."
+  title: Experience
+  description: >-
+    Over 15+ years of experience working with companies from all over the world.
+    I design & develop digital products to help businesses and improve people's
+    lives.
   button:
-    icon: "icon-linkedin-fill"
-    btnText: "Linkedin"
-    URL: "https://www.linkedin.com/company/radity/"
+    icon: icon-linkedin-fill
+    btnText: Linkedin
+    URL: 'https://www.linkedin.com/company/radity/'
   button2:
-    icon: "icon-profile-fill"
-    btnText: "Download My Resume"
-    URL: "#"
-
+    icon: icon-profile-fill
+    btnText: Download My Resume
+    URL: '#'
   items:
-    - title: "Sr. Front-End Developer"
-      company: "Radity"
-      duration: "Feb 2011 - Sep 2019"
-
-    - title: "Sr. Front-End Developer"
-      company: "Textic"
-      duration: "Apr 2010 - Jan 2011"
-
-    - title: "Jr. Front-End Developer"
-      company: "Cyberse"
-      duration: "Jun 2009 - Mar 2010"
-
-# Client & Work
+    - title: Sr. Front-End Developer
+      company: Radity
+      duration: Feb 2011 - Sep 2019
+    - title: Sr. Front-End Developer
+      company: Textic
+      duration: Apr 2010 - Jan 2011
+    - title: Jr. Front-End Developer
+      company: Cyberse
+      duration: Jun 2009 - Mar 2010
 client_and_work:
-  title: "Clients & Works"
+  title: Clients & Works
   enable: true
-
   clients:
     - logo:
-        x: "img/clients/asgardia.png"
-        _2x: "img/clients/asgardia@2x.png"
-      alt: "Asgardia"
-
+        x: img/clients/asgardia.png
+        _2x: img/clients/asgardia@2x.png
+      alt: Asgardia
     - logo:
-        x: "img/clients/earth-2.png"
-        _2x: "img/clients/earth-2@2x.png"
-      alt: "Earth 2.0"
-
+        x: img/clients/earth-2.png
+        _2x: img/clients/earth-2@2x.png
+      alt: Earth 2.0
     - logo:
-        x: "img/clients/goldline.png"
-        _2x: "img/clients/goldline@2x.png"
-      alt: "Goldline"
-
+        x: img/clients/goldline.png
+        _2x: img/clients/goldline@2x.png
+      alt: Goldline
     - logo:
-        x: "img/clients/kanba.png"
-        _2x: "img/clients/kanba@2x.png"
-      alt: "Kanba"
-
+        x: img/clients/kanba.png
+        _2x: img/clients/kanba@2x.png
+      alt: Kanba
     - logo:
-        x: "img/clients/zoo-tv.png"
-        _2x: "img/clients/zoo-tv@2x.png"
-      alt: "Zoo"
-
+        x: img/clients/zoo-tv.png
+        _2x: img/clients/zoo-tv@2x.png
+      alt: Zoo
     - logo:
-        x: "img/clients/ztos.png"
-        _2x: "img/clients/ztos@2x.png"
-      alt: "Ztos"
-
+        x: img/clients/ztos.png
+        _2x: img/clients/ztos@2x.png
+      alt: Ztos
   works:
-    - title: "Radity Finance - UI Kit"
-      description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
+    - title: Radity Finance - UI Kit
+      description: >-
+        We have been receiving a lot of requests for a Finance Kit recently due
+        to the popularity of Fintech.
       button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
+        icon: icon-arrow-right
+        btnText: Case Study
+        URL: '#'
       image:
-        x: "img/works/radity-finance.jpg"
-        _2x: "img/works/radity-finance@2x.jpg"
+        x: img/works/radity-finance.jpg
+        _2x: img/works/radity-finance@2x.jpg
       is_even: true
-
-    - title: "Swiss Fintech Website"
-      description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
+    - title: Swiss Fintech Website
+      description: >-
+        The Swiss Finance + Technology Association is the leading FinTech hub in
+        Switzerland.
       button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
+        icon: icon-arrow-right
+        btnText: Case Study
+        URL: '#'
       image:
-        x: "img/works/swissfintech.jpg"
-        _2x: "img/works/swissfintech@2x.jpg"
+        x: img/works/swissfintech.jpg
+        _2x: img/works/swissfintech@2x.jpg
       is_even: false
-
-    - title: "Robo Advisor"
-      description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
+    - title: Robo Advisor
+      description: >-
+        Robo Advisor is a Swiss Wealth Manager and wants to create the best
+        digital experience for its UNHW clients across the world. We started
+        with a whiteboard.
       button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
+        icon: icon-arrow-right
+        btnText: Case Study
+        URL: '#'
       image:
-        x: "img/works/robo-advisor.jpg"
-        _2x: "img/works/robo-advisor@2x.jpg"
+        x: img/works/robo-advisor.jpg
+        _2x: img/works/robo-advisor@2x.jpg
       is_even: true
-
-# testimonial
 testimonial:
   enable: true
-  title: "Testimonials"
+  title: Testimonials
   items:
-    - name: "Daniel Jordan"
-      position: "Phonet, CEO"
-      content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
+    - name: Daniel Jordan
+      position: 'Phonet, CEO'
+      content: >-
+        Cold calling can be a great way to generate quality leads. You get to
+        speak to the gatekeepers and stakeholders, and you get a great insight
+        into their requirements and influences. But cold calling is an art-form.
+        It can be daunting, it’s always a lot of work, and you always need to
+        make a good impression.
       image:
-        x: "img/testimonials/daniel-jordan.jpg"
-        _2x: "img/testimonials/daniel-jordan@2x.jpg"
-
-    - name: "Jonathan Peters"
-      position: "Textic, CEO"
-      content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
+        x: img/testimonials/daniel-jordan.jpg
+        _2x: img/testimonials/daniel-jordan@2x.jpg
+    - name: Jonathan Peters
+      position: 'Textic, CEO'
+      content: >-
+        Whether you or your loved one is encountering the natural decrease in
+        mobility that occurs with the passing of time, or deals with an
+        illness-related lack of physical agility, a stair lift can be the ideal
+        way to put you in charge of your home again. Regardless of the shape or
+        make of your living accommodation.
       image:
-        x: "img/testimonials/jonathan-peters.jpg"
-        _2x: "img/testimonials/jonathan-peters@2x.jpg"
-
-    - name: "Antonio Willis"
-      position: "Cyberse, CEO"
-      content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
+        x: img/testimonials/jonathan-peters.jpg
+        _2x: img/testimonials/jonathan-peters@2x.jpg
+    - name: Antonio Willis
+      position: 'Cyberse, CEO'
+      content: >-
+        In this digital generation where information can be easily obtained
+        within seconds, business cards still have retained their importance in
+        the achievement of increased business exposure and business sales. If
+        your business already has a bunch of printed cards distributed to a
+        number of potential customers and yet.
       image:
-        x: "img/testimonials/antonio-willis.jpg"
-        _2x: "img/testimonials/antonio-willis@2x.jpg"
-
-# contact
+        x: img/testimonials/antonio-willis.jpg
+        _2x: img/testimonials/antonio-willis@2x.jpg
 contact:
   enable: true
-  title: "Contact"
+  title: Contact
   form:
-    action: "#"
-    full_name: "Full Name"
-    email: "Email Address"
-    message: "Type Your Message Here"
+    action: '#'
+    full_name: Full Name
+    email: Email Address
+    message: Type Your Message Here
   phone:
-    title: "Phone Number"
-    number: "+41 (44) 505 10 99"
+    title: Phone Number
+    number: +41 (44) 505 10 99
   email:
-    title: "Email"
+    title: Email
     email: '<a href="mailto:team@radity.com">team@radity.com</a>'
   address:
-    title: "Address"
-    address: "Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich"
+    title: Address
+    address: 'Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich'
   button:
-    icon: "icon-mail-fill"
-    btnText: "Send Message"
-
-# newsletter
+    icon: icon-mail-fill
+    btnText: Send Message
 newsletter:
   enable: true
-  title: "Newsletter subscription"
-  success_message: "Successfully subscribed"
-  error_message: "Error while subscribing."
-  note: "We'll never share your email with anyone else."
+  title: Newsletter subscription
+  success_message: Successfully subscribed
+  error_message: Error while subscribing.
+  note: We'll never share your email with anyone else.

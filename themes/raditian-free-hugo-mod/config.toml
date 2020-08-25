@@ -1,0 +1,103 @@
+baseURL = "/"
+languageCode = "en-us"
+theme = "raditian-free-hugo-mod"
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "css/main.css"
+  [[params.plugins.css]]
+  URL = "css/rad-icons.css"
+  [[params.plugins.css]]
+  URL = "css/custom.css"
+  [[params.plugins.css]]
+  URL = "rad-icons-codes.css"
+  [[params.plugins.css]]
+  URL = "rad-icons-embedded.css"
+  [[params.plugins.css]]
+  URL = "rad-icons-ie7-codes.css"
+  [[params.plugins.css]]
+  URL = "rad-icons-ie7.css"
+  [[params.plugins.css]]
+  URL = "animation.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "js/rad-animations.js"
+  [[params.plugins.js]]
+  URL = "js/sticky-header.js"
+  [[params.plugins.js]]
+  URL = "js/library/fontfaceobserver.js"
+  [[params.plugins.js]]
+
+
+# navigation
+[menu]
+
+[[menu.header]]
+  name = "About"
+  URL = "#about"
+  weight = 2
+
+  [[menu.header]]
+  name = "Projects"
+  URL = "#projects"
+  weight = 3
+
+  [[menu.header]]
+  name = "Blog"
+  URL = "#blog"
+  weight = 4
+
+  [[menu.header]]
+  name = "Resume"
+  URL = "resume/7-15-20_resume.pdf"
+  weight = 5
+
+
+  [[menu.footer]]
+  name = "About"
+  URL = "#about"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Projects"
+  URL = "#projects"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Blog"
+  URL = "#blog"
+  weight = 4
+
+  [[menu.footer]]
+  name = "Resume"
+  URL = "resume/7-15-20_resume.pdf"
+  weight = 5
+
+
+[params]
+  sections = ["home", "about", "projects", "blog"]
+  #sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
+
+  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+
+  [params.social_links]
+  linkedin = "https://www.linkedin.com/in/elianagrosof"
+  medium = "https://medium.com/data-explained"
+  github = "https://github.com/ElianaGrosof"
+  tableau = "https://public.tableau.com/profile/eliana1304#!/"
+
+  [params.full_name]
+  normal = "Eliana Grosof"
+  upper = "ELIANA GROSOF"
+  lower = "eliana grosof"
+
+  [params.footer]
+      copyright = "© Raditian. All rights reserved."
+      [params.footer.radity_logo]
+        x = "img/general/design-and-code-radity.png"
+        _2x = "img/general/design-and-code-radity@2x.png"
+        alt = "Design & Code - Radity"

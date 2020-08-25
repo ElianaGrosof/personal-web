@@ -2,7 +2,7 @@
 <section id="projects" class="section rad-animation-group pb-0">
   <div class="container rad-fade-down">
     <h2 style='text-align: center;'>
-      {{ .Site.Data.homepage.projects.title }} <!-- this is literally "Projects" -->
+      {{ .Site.Data.homepage.projects.section_title }} <!-- this is literally "Projects" -->
     </h2></a>
     <p class="lead">
       {{ .Site.Data.homepage.projects.description }}
@@ -29,8 +29,8 @@
      <img
        class="lozad img-responsive"
        src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-       data-src="{{ .image.x | absURL }}"
-       data-srcset="{{ .logo.x | absURL }} 1x"
+       data-src="{{ .image | absURL }}"
+       data-srcset="{{ .image | absURL }} 1x"
        alt="{{ .alt }}"
      />
      </a>

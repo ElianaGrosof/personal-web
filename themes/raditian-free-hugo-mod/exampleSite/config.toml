@@ -1,6 +1,6 @@
-baseURL = "https://raditian-hugo.radity.com/"
+baseURL = "/"
 languageCode = "en-us"
-theme = "raditian-free-hugo-theme"
+theme = "raditian-free-hugo-mod"
 
 # Plugins
 [params.plugins]
@@ -36,20 +36,25 @@ theme = "raditian-free-hugo-theme"
 # navigation
 [menu]
 
-  [[menu.header]]
+[[menu.header]]
   name = "About"
   URL = "#about"
   weight = 2
 
   [[menu.header]]
-  name = "Portfolio"
-  URL = "#portfolio"
+  name = "Projects"
+  URL = "#projects"
   weight = 3
 
   [[menu.header]]
-  name = "Contact"
-  URL = "#contact"
+  name = "Blog"
+  URL = "#blog"
   weight = 4
+
+  [[menu.header]]
+  name = "Resume"
+  URL = "resume/7-15-20_resume.pdf"
+  weight = 5
 
 
   [[menu.footer]]
@@ -58,25 +63,31 @@ theme = "raditian-free-hugo-theme"
   weight = 2
 
   [[menu.footer]]
-  name = "Portfolio"
-  URL = "#portfolio"
+  name = "Projects"
+  URL = "#projects"
   weight = 3
 
   [[menu.footer]]
-  name = "Contact"
-  URL = "#contact"
+  name = "Blog"
+  URL = "#blog"
   weight = 4
+
+  [[menu.footer]]
+  name = "Resume"
+  URL = "resume/7-15-20_resume.pdf"
+  weight = 5
 
 
 [params]
-
-  sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
+  sections = ["about", "projects", "blog", "resume"]
+  #sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
 
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
 
-  [params.logo]
-    text1 = "Andreas"
-    text2 = "Ellure"
+  [params.full_name]
+  normal = "Eliana Grosof"
+  upper = "ELIANA GROSOF"
+  lower = "eliana grosof"
 
   [params.footer]
       copyright = "© Raditian. All rights reserved."

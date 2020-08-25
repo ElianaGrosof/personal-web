@@ -1,66 +1,24 @@
-/*
-Copyright 2019 Adobe
-All Rights Reserved.
-NOTICE: Adobe permits you to use, modify, and distribute this file in
-accordance with the terms of the Adobe license agreement accompanying
-it. If you have received this file from a source other than Adobe,
-then your use, modification, or distribution of it requires the prior
-written permission of Adobe.
-*/
+<input id="inputFile" type="file" onchange="convertToBase64();" />
 
-/* Helper function to render the file using PDF Embed API. */
-function previewFile(filePromise, fileName) {
-    /* Initialize the AdobeDC View object */
-    var adobeDCView = new AdobeDC.View({
-        /* Pass your registered client id */
-        clientId: "9de8224394d04f75b379486a56dd5f36"",
-        /* Pass the div id in which PDF should be rendered */
-        divId: "adobe-dc-view",
-    });
-
-    /* Invoke the file preview API on Adobe DC View object */
-    adobeDCView.previewFile({
-        /* Pass information on how to access the file */
-        content: {
-            /* pass file promise which resolve to arrayBuffer */
-            promise: filePromise,
-        },
-        /* Pass meta data of file */
-        metaData: {
-            /* file name */
-            fileName: fileName
-        }
-    }, {});
-}
-
-/* Helper function to check if selected file is PDF or not. */
-function isValidPDF(file) {
-    if (file.type === "application/pdf") {
-        return true;
-    }
-    if (file.type === "" && file.name) {
-        var fileName = file.name;
-        var lastDotIndex = fileName.lastIndexOf(".");
-        return !(lastDotIndex === -1 || fileName.substr(lastDotIndex).toUpperCase() !== "PDF");
-    }
-    return false;
-}
-
-/* Helper function to listen for file upload and
- * creating Promise which resolve to ArrayBuffer of file data.
- **/
-function listenForFileUpload() {
-    var fileToRead = document.getElementById("file-picker");
-    fileToRead.addEventListener("change", function (event) {
-        var files = fileToRead.files;
-        if (files.length > 0 && isValidPDF(files[0])) {
-            var fileName = files[0].name;
-            var reader = new FileReader();
-            reader.onloadend = function (e) {
-                var filePromise = Promise.resolve(e.target.result);
-                previewFile(filePromise, fileName);
+<script type="text/javascript">
+    function convertToBase64() {
+        //Read File
+        var selectedFile = document.getElementById("inputFile").files;
+        //Check File is not Empty
+        if (selectedFile.length > 0) {
+            // Select the very first file from list
+            var fileToLoad = selectedFile[0];
+            // FileReader function for read the file.
+            var fileReader = new FileReader();
+            var base64;
+            // Onload of file read the file content
+            fileReader.onload = function(fileLoadedEvent) {
+                base64 = fileLoadedEvent.target.result;
+                // Print data in console
+                console.log(base64);
             };
-            reader.readAsArrayBuffer(files[0]);
+            // Convert data to base64
+            fileReader.readAsDataURL(fileToLoad);
         }
-    }, false);
-}
+    }
+</script>

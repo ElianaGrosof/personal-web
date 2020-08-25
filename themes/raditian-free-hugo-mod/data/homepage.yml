@@ -50,7 +50,7 @@ about:
     climbing, social dancing, including swing, blues, and salsa, and going to
     concerts and other arts events. </p>
   image:
-    x: /img/who-am-i/eliana_edited.jpg
+    x: img/who-am-i/eliana_edited.jpg
     _2x: ''
 education:
   enable: true

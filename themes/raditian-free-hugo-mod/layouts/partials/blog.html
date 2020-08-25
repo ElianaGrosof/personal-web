@@ -1,0 +1,19 @@
+{{ if .Site.Data.homepage.projects.enable }}
+<section id="blog" class="section rad-animation-group pb-0">
+  <div class="container rad-fade-down">
+    <h2 style='text-align: center;'>
+      Blog
+    </h2></a>
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="col-sm-6">
+        <a href="blog/lorem.md">Template Post </a>
+        <!-- loop over latest 5 blog posts here -->
+          <!-- <a href="link to post as subpage of website"> Blog Post Title -->
+      </div>
+      <div class="col-sm-6">
+        <!-- loop over NEXT latest 5 blog posts here -->
+          <!-- <a href="link to post as subpage of website"> Blog Post Title -->
+      </div>
+    </div>
+
+{{ end }}

@@ -1,1 +1,4 @@
 /* You can customize theme styles here */
+.max-800px {
+    max-width: 800px;
+}

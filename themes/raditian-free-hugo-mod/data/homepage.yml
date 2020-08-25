@@ -15,6 +15,7 @@ showcase:
     btnText: "Contact"
     URL: "https://radity.com/en/contact/"
 
+# not using these
   socialLinks:
     - icon: "linkedin"
       URL: "https://www.linkedin.com/company/radity/"
@@ -49,23 +50,20 @@ showcase:
 # about
 about:
   enable: true
-  title: "Who am I?"
+  title: "About Me"
   content: '<p class="lead">
-    I am back, after a few days of vacationing with family. Weather was awesome, the beach was
-    full of nasty jelly-fish, yuk! All-in-all, life has been good. I hope life has been as
-    good for all of you.
+    I am a recent college graduate passionate about using data science for good.
+    I have worked on projects related to computer security and education, housing policy, and machine learning.
     </p>
     <p class="lead">
-    My area of focus lies in designing web and mobile products, user research as well as
-    leading of design & front-end teams. I enjoy designing and coding the UI as much as
-    talking with users to iterate and improve the experiences that reach business goals.
+    I graduated from Oberlin College in May 2020 with a double major in Computer Science and Politics.
+    </p>
+    <p class="lead">
+    My hobbies include rock climbing, social dancing, including swing, blues, and
+    salsa, and going to concerts and other arts events.
     </p>'
-  button:
-    icon: "icon-smile-fill"
-    btnText: "About Me"
-    URL: "https://www.linkedin.com/company/radity/"
   image:
-    x: "/img/homepage/hobby_icon.png"
+    x: "/img/who-am-i/eliana_edited.jpg"
     _2x: ""
 
 # education
@@ -73,13 +71,9 @@ education:
   enable: true
   title: "Education"
   items:
-    - university: "University of Waterloo"
-      year: "2012-2017"
-      degree: "Bachelor of Applied Science (BASc), Electrical Engineering"
-
-    - university: "Sir John A Macdonald CI"
-      year: "2009-2012"
-      degree: "High School Diploma, Sciences, Math, Computer & Business Studies"
+    - university: "Oberlin College"
+      year: "2016-2020"
+      degree: "Bachelor of the Arts, Computer Science and Politics"
 
 # experience
 experience:

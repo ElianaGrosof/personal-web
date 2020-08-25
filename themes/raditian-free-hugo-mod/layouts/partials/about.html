@@ -1,4 +1,5 @@
 {{ if .Site.Data.homepage.about.enable }}
+
 <section class="section rad-animation-group pb-0" id="about">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
@@ -7,7 +8,7 @@
           class="lozad img-responsive image-left-overflow"
           src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
           data-src="{{ .Site.Data.homepage.about.image.x | absURL }}"
-          data-srcset="{{ .Site.Data.homepage.about.image.x | absURL }} 1x, {{ .Site.Data.homepage.about.image._2x | absURL }} 2x"
+          data-srcset="{{ .Site.Data.homepage.about.image.x | absURL }} 1x"
           alt="Profile Picture"
         />
       </div>
@@ -28,4 +29,13 @@
     </div>
   </div>
 </section>
+
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2></h2>
+                <div class="row pt-2 pt-md-4">
+</section>
+
 {{ end }}

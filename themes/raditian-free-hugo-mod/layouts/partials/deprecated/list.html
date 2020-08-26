@@ -1,0 +1,25 @@
+<head>
+
+    {{ partial "head.html" . }}
+
+</head>
+
+{{ define "content" }}
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid post-card-holder" id="post-card-holder">
+      {{ $paginator := .Paginate .RegularPagesRecursive 12 }}
+      {{ range $paginator.Pages }}
+        {{ partial "post.html" . }}
+      {{ end }}
+    </div>
+    <div class="paginator">
+      {{ template "_internal/pagination.html" . }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+    <script src="js/list.js"></script>
+{{ end }}

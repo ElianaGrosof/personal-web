@@ -2,16 +2,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
-<!-- define page title and description ala https://www.pakstech.com/blog/create-hugo-theme/ -->
-<title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
-<meta name="description"
-content="{{ with .Description }}{{ . }}
-{{ else }}
-{{ with .Summary }}{{ . }}
-{{ else }}
-{{ .Site.Params.description }}
-{{end }}{{ end }} ">
-
 <!-- canonical permalink stuff, apparently it's important -->
 <link rel="canonical" href="{{ .Permalink }}" />
 

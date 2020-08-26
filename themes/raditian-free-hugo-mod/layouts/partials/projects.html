@@ -1,4 +1,3 @@
-{{ if .Site.Data.homepage.projects.enable }}
 <section id="projects" class="section rad-animation-group pb-0">
   <div class="container rad-fade-down">
     <h2 style='text-align: center;'>
@@ -8,36 +7,58 @@
       {{ .Site.Data.homepage.projects.description }}
     </p>
 
-<!--
-    3 x 1 row of projects. If you want to add another row of 3, just:
-    1) copy and paste the code below
-    2) change "set1" to "set2".
-    3) edit "set2" in homepage.yml
--->
-<div class="row d-flex flex-column-reverse flex-md-row">
-   {{ range .Site.Data.homepage.projects.set1 }}
-   <p class="lead">
-     <div class="experience__title" style="width:image width px;">
-       <a href= "{{ .URL | absURL }}"> {{ .title }} </a>
-    </div>
-  </p>
   <p class="lead">
-    {{ .description }}
-  </p>
-   <div class="col-sm-4">
-     <a href="{{ .URL | absURL }}">
-     <img
-       class="lozad img-responsive"
-       src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-       data-src="{{ .image | absURL }}"
-       data-srcset="{{ .image | absURL }} 1x"
-       alt="{{ .alt }}"
-     />
-     </a>
-  </div>
-  {{ end }}
-</div>
-</section>
-{{ end }}
+    <div class="experience__title" style="width:image width px;">
+      <a href= "/">
+        UpSetR is the Greatest Set Visualization Since the Venn Diagram</div>
+      </a></p>
+      <div class="container rad-fade-down">
+        <div class="row d-flex flex-column-reverse flex-md-row">
+          <div class="col-sm-4">
+            <a href=https://medium.com/data-explained>
+              <img
+              class="lozad img-responsive image-left"
+              src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+              data-src="/img/blog/icon.png"
+              data-srcset="/img/blog/icon.png 1x"
+              alt="Blog Icon"
+              />
+            </a>
+          </div>
+          <div class= "col-sm-4">
+            <p class="lead">
+              <div class="experience__title" style="width:image width px;">
+                <a href= https://medium.com/data-explained/upsetr-is-the-greatest-set-visualization-since-the-venn-diagram-8bccbaef698a>
+                  UpSetR is the Greatest Set Visualization Since the Venn Diagram</div>
+                </a></p>
+                <a href = https://medium.com/data-explained/upsetr-is-the-greatest-set-visualization-since-the-venn-diagram-8bccbaef698a>
+                  <img
+                  class="lozad img-responsive img-right"
+                  src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                  data-src="/img/blog/upsetr_viz.png"
+                  data-srcset="/img/blog/upsetr_viz.png 1x"
+                  alt="UpSetR is the Greatest Set Visualization Since the Venn Diagram"
+                  style="padding-bottom:0.5em;"
+                  /></a>
+                </div>
 
-<!-- set 2 of projects goes here -->
+                <div class="col-sm-4">
+                  <p class="lead">
+                    <div class="experience__title" style="width:image width px">
+                      <a href= https://medium.com/data-explained/upsetr-is-the-greatest-set-visualization-since-the-venn-diagram-8bccbaef698a>
+                        UpSetR is the Greatest Set Visualization Since the Venn Diagram</div>
+                      </a></p>
+                      <a href= https://medium.com/data-explained/upsetr-is-the-greatest-set-visualization-since-the-venn-diagram-8bccbaef698a>
+                        <img
+                        class="lozad img-responsive"
+                        src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                        data-src="/img/blog/upsetr_viz.png"
+                        data-srcset="/img/blog/upsetr_viz.png 1x"
+                        alt="UpSetR is the Greatest Set Visualization Since the Venn Diagram"
+                        style="padding-bottom:0.5em;"
+                        /></a>
+                      </div>
+                    </div>
+                  </section>
+
+                  <!-- set 2 of projects goes here -->

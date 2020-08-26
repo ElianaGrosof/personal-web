@@ -1,0 +1,29 @@
+
+<head>
+    {{ partial "head.html" . }}
+    {{ partial "head_custom.html" . }}
+</head>
+
+<body>
+  {{ partial "header.html" . }}
+
+  {{ define "content" }}
+  <article class="section rad-animation-group pb-0" >
+    <div class="col-12 col-md-6 my-auto my-auto">
+      <h5 class="author-name">{{ partial "get_author_name.html" . }}</h5>
+      <p>{{ .Page.Date.Format "January 2, 2006" }}</p>
+      <h1> {{ .Page.Title}}</hr>
+        <div class="post-content" id="post-content">
+          {{ .Page.Content }}
+        </div>
+      <hr />
+        {{ partial "next-prev-navigator.html" . }}
+      <hr />
+    <div>
+  </article>
+  {{ end }}
+
+  {{ partial "footer.html" . }}
+  {{ partial "base-foot.html" . }}
+
+</body>

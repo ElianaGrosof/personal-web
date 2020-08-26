@@ -38,17 +38,17 @@ theme = "raditian-free-hugo-mod"
 
 [[menu.header]]
   name = "About"
-  URL = "#about"
+  URL = "elianagrosof.com/#about"
   weight = 2
 
   [[menu.header]]
   name = "Projects"
-  URL = "#projects"
+  URL = "elianagrosof.com/#projects"
   weight = 3
 
   [[menu.header]]
   name = "Blog"
-  URL = "#blog"
+  URL = "elianagrosof.com/#blog"
   weight = 4
 
   [[menu.header]]
@@ -59,17 +59,17 @@ theme = "raditian-free-hugo-mod"
 
   [[menu.footer]]
   name = "About"
-  URL = "#about"
+  URL = "elianagrosof.com/#about"
   weight = 2
 
   [[menu.footer]]
   name = "Projects"
-  URL = "#projects"
+  URL = "elianagrosof.com/#projects"
   weight = 3
 
   [[menu.footer]]
   name = "Blog"
-  URL = "#blog"
+  URL = "elianagrosof.com/#blog"
   weight = 4
 
   [[menu.footer]]
@@ -83,6 +83,8 @@ theme = "raditian-free-hugo-mod"
   #sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
 
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+
+  enableTOC = true
 
   [params.social_links]
   linkedin = "https://www.linkedin.com/in/elianagrosof"

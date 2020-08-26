@@ -1,0 +1,34 @@
+{{ define "list_header"}}
+    <head>
+    {{- partial "head.html" . -}}
+    </head>
+    <body>
+    {{- partial "header.html" . -}}
+    </body>
+{{ end }}
+
+{{ define "main" }}
+<section id="list">
+    <div class="main-content">
+        <!-- Posts Index
+        ================================================== -->
+        <section class="recent-posts">
+            <div class="section-title">
+                <h2><span>All Posts</span></h2>
+            </div>
+            <div class="row listrecent">
+                {{ $post_paginator := .Paginate (.Pages) 6 }}
+                {{ range $post_paginator.Pages }}
+                    {{- partial "postbox.html" . -}}
+                {{end}}
+            </div>
+        </section>
+        {{- partial "pagination.html" $post_paginator -}}
+    </div>
+</section>
+{{ end }}
+
+{{ define "list_footer" }}
+  {{- partial "footer.html" . -}}
+  {{- partial "base-foot.html" . -}}
+{{ end }}

@@ -1,57 +1,15 @@
-showcase:
-  enable: true
-  title: 'Hello, I’m Andreas.'
-  subtitle: Front-End Developer
-  description: >-
-    I work at <a target='_blank' href='https://radity.com/'>Radity</a>, a
-    software development company in Switzerland. And I am a Raditian. You get
-    the idea where theme name comes from. Keep cool, stay in touch. You can
-    download this theme from <a target='_blank'
-    href='https://github.com/radity/raditian-free-hugo-theme'>github</a>.
-  image:
-    x: img/showcase/showcase.png
-    _2x: img/showcase/showcase@2x.png
-  imageMobile:
-    x: img/showcase/showcase-mobile.jpg
-  button:
-    icon: icon-mail-fill
-    btnText: Contact
-    URL: 'https://radity.com/en/contact/'
-socialLinks:
-  - icon: linkedin
-    URL: 'https://www.linkedin.com/company/radity/'
-  - icon: github
-    URL: 'https://github.com/radity'
-  - icon: twitter
-    URL: 'https://twitter.com/radity'
-  - icon: dribbble
-    URL: 'https://dribbble.com/radity'
-  - icon: behance
-    URL: 'https://www.behance.net/radity-digital'
-  - icon: youtube
-    URL: 'https://www.youtube.com/channel/UCojEc6SPO-W1_CoeHhK9-Zw'
-  - icon: instagram
-    URL: 'https://www.instagram.com/teamradity/'
-  - icon: facebook
-    URL: 'https://www.facebook.com/raditycom/'
-  - icon: codepen
-    URL: '#'
-  - icon: yelp
-    URL: 'https://www.yelp.com/'
+author:
+  name: by Eliana Grosof
+  image: 'img/who-am-i/eliana_edited.jpg'
+  description: A description of the author.
 about:
   enable: true
   title: About Me
-  content: >-
-    <p class="lead"> I am a recent college graduate passionate about using data
-    science for good. I have worked on projects related to computer security and
-    education, housing policy, and machine learning. </p> <p class="lead"> I
-    graduated from Oberlin College in May 2020 with a double major in Computer
-    Science and Politics. </p> <p class="lead"> My hobbies include rock
-    climbing, social dancing, including swing, blues, and salsa, and going to
-    concerts and other arts events. </p>
-  image:
-    x: img/who-am-i/eliana_edited.jpg
-    _2x: ''
+  content: 'I am a recent college graduate passionate about using data science for good.
+  I have worked on projects related to computer security and education, housing policy, and machine learning.
+  </p><p class="lead"> I graduated from Oberlin College in May 2020 with a double major in Computer Science and Politics.
+  </p><p class="lead"> My hobbies include rock climbing, social dancing, including swing, blues, and salsa, and going to concerts and other arts events.</p>'
+  image: img/who-am-i/eliana_edited.jpg
 education:
   enable: true
   title: Education
@@ -72,11 +30,13 @@ projects:
       image: img/homepage/watercolorblue.jpg
       URL: github.com/Project_1
       alt: alt
+      align: image-left
     - title: Project 2
       description: Project 2's description.
       image: img/homepage/pexels-pixabay-373543.jpg
       URL: github.com/Project_2
       alt: alt
+      align: image-right
     - title: Project 3
       description: Project 3's description.
       image: img/homepage/mult_lite_9.jpg
@@ -88,6 +48,7 @@ projects:
       image: img/project4.png
       URL: github.com/Project_4
       alt: alt
+      align:
     - title: Project 5
       description: Project 5's description.
       image: img/project5.png

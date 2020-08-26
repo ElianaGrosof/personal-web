@@ -1,0 +1,68 @@
+
+<head>
+    {{ partial "head.html" . }}
+    {{ partial "head_custom.html" . }}
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+    />
+  <link rel="stylesheet" href="css/single.css" />
+  <link rel="stylesheet" href="css/sidebar.css">
+</head>
+
+<body>
+  {{ partial "header.html" . }}
+
+  {{ define "content" }}
+  <section class="content-section" id="content-section">
+    <div class="content">
+      <div class="container p-0 read-area">
+
+        <!--Content Start-->
+        <div class="page-content">
+          <div class="author-profile ml-auto align-self-lg-center">
+            <img class="rounded-circle" src='{{ partial "get_author_image.html" . }}'/>
+            <h5 class="author-name">{{ partial "get_author_name.html" . }}</h5>
+            <p>{{ .Page.Date.Format "January 2, 2006" }}</p>
+          </div>
+          <div class="title">
+            <h1>{{ .Page.Title }}</h1>
+          </div>
+          <div class="post-content" id="post-content">
+            {{ .Page.Content }}
+          </div>
+          <!---Next and Previous Navigator -->
+        <hr />
+          {{ partial "next-prev-navigator.html" . }}
+        <hr />
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ define "toc" }}
+    <section class="toc-section" id="toc-section">
+      {{ if site.Params.enableTOC }}
+      <div class="toc-holder">
+        <h5 class="text-center pl-3">Table of Contents</h5>
+        <hr>
+        <div class="toc">
+          {{ .TableOfContents }}
+        </div>
+      </div>
+      {{ end }}
+    </section>
+  {{ end }}
+
+  {{ define "scripts" }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script src="js/single.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  {{ if .Params.math }}
+      {{ partial "math.html" . }}
+  {{ end }}
+  {{ end }}
+</body>

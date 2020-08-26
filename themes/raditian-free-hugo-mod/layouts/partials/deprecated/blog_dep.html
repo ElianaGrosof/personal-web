@@ -3,24 +3,14 @@
   <div class="container rad-fade-down">
     <h2 style='text-align: center;'>
       Blog
-    </h2>
-    <p style="text-align:center;"> My most recent posts. </p>
-
+    </h2></a>
     <div class="row d-flex flex-column-reverse flex-md-row">
       <div class="row" id="recent-post-cards">
         {{ range first 3 (where site.RegularPages.ByDate.Reverse "Type" "in" site.Params.mainSections )}}
-          {{ partial "postbox.html" . }}
+          {{ partial "recent-post.html" . }}
         {{ end }}
       </div>
     </div>
   </div>
-</section>
-
-<section class="section section--border-bottom rad-animation-group">
-    <div class="container">
-        <div class="row rad-fade-down">
-            <div class="col-12">
-                <h2></h2>
-                <div class="row pt-2 pt-md-4">
 </section>
 {{ end }}

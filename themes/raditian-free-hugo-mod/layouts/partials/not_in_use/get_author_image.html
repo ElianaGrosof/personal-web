@@ -1,0 +1,12 @@
+{{ $authorImage:= "img/blog/icon.png"}}
+{{ if .Site.Data.author}}
+    {{ $authorImage = .Site.Data.homepage.author.image | relURL }}
+{{ end}}
+{{ if eq (printf "%T" .Params.author ) "maps.Params" }}
+    {{ with .Params.author }}
+        {{ if .image }}
+            {{ $authorImage = .image }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ return $authorImage }}

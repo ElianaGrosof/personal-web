@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-us"><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+
+<link rel="canonical" href="/content/" />
+
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
+</script>
+
+
+<title></title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="/css/main.css"/>
+
+<link rel="stylesheet" href="/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="/css/custom.css"/>
+
+<link rel="stylesheet" href="/rad-icons-codes.css"/>
+
+<link rel="stylesheet" href="/rad-icons-embedded.css"/>
+
+<link rel="stylesheet" href="/rad-icons-ie7-codes.css"/>
+
+<link rel="stylesheet" href="/rad-icons-ie7.css"/>
+
+<link rel="stylesheet" href="/animation.css"/>
+
+
+
+<script src="https://kit.fontawesome.com/ffb349db1a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css">
+<body><header class="header rad-animation-group" id="header">
+  <div class="container fixed-top" style="padding: 15px; background: rgba(255, 255, 255,1.0); overflow: hidden;">
+    <nav class="navbar navbar-expand-lg navbar-light p-0 rad-fade-in">
+      <a class="navbar-brand" href="/"> 
+        <b>ELIANA GROSOF</b>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target= "#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#about"
+              >about</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#projects"
+              >projects</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#blog"
+              >blog</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="resume/7-15-20_resume.pdf"
+              >resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+<section id="list">
+  <div class="site-content">
+  <div class="section section--border-bottom columns is-centered" >
+    <div class="container"></div>
+    <div class="main-content">
+    <div class = "columns is-centered">
+    <div class="column max-800px">
+      
+      <br></br><br></br>
+      <div class="main-content">
+          
+          <section class="recent-posts">
+              <div class="section-title">
+                  <h2><span>All Posts</span></h2><br></br>
+              </div>
+              <div class="row listrecent">
+                  
+                  
+<div class="col-lg-4 col-md-6 mb-30px card-group">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/content/post/sample-post-2/">
+                
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title"><a class="text-dark" href="/content/post/sample-post-2/">Sample Post 2</a></h3>
+            <p class="card-text">A summary of sample post 2. This summary is longer. Does it fix anything?</p>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                
+                
+                <span class="post-date">Aug 25, 2020
+                  - <i class="far fa-clock clock"></i>
+                  2 min read </span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+              </div>
+          </section>
+<div class="bottompagination">
+  <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+  <span class="navigation" role="navigation">
+    
+      <div class="pagination">
+        
+          <a class="ml-1 mr-1" href="/content/">&laquo; Prev</a>
+          <a class="ml-1 mr-1" href="/content/">1</a>
+        
+
+        <span class="ml-1 mr-1">2</span>
+
+        
+          <span>Next &raquo;</span>
+        
+      </div>
+    
+  </span>
+</div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+        </main><footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      <div class="footer__copy">
+        © Raditian. All rights reserved.
+      </div>
+    </div>
+    <div class="footer__links" style="opacity: 50; color:white">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">HOME</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/">ABOUT</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/">PROJECTS</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/">BLOG</a>
+        </li>
+        
+        <li class="nav-item">
+          <a data-scroll class="nav-link" href="resume/7-15-20_resume.pdf"
+            >RESUME</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="footer__right">
+      <a href="https://radity.com/"
+        ><img
+          src="/img/general/design-and-code-radity.png"
+          srcset="/img/general/design-and-code-radity.png 1x, /img/general/design-and-code-radity@2x.png 2x"
+          alt="Design &amp; Code - Radity"
+      /></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>/</link>
-    <description>Recent content on </description>
+    <title>Posts on </title>
+    <link>/post/</link>
+    <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Aug 2020 21:25:32 -0700</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -36,20 +36,6 @@
       
       <guid>/post/lorem-ipsum/</guid>
       <description>A summary of Lorem Ipsum. This summary is longer. Does it fix anything?</description>
-    </item>
-    
-    <item>
-      <title>This Post is Full of Lorem Ipsum</title>
-      <link>/blog/lorem/</link>
-      <pubDate>Tue, 25 Aug 2020 00:22:56 -0700</pubDate>
-      
-      <guid>/blog/lorem/</guid>
-      <description>What is Lorem Ipsum? In mollis cursus ligula, et venenatis neque maximus ut&amp;hellip;
-Vivamus ut tincidunt urna. Nam eu mollis dolor&amp;hellip;
-In mollis cursus ligula Etiam et ligula sit amet urna aliquam suscipit&amp;hellip;
- Cras dui nulla, ornare eget fermentum quis, accumsan vitae purus.  Nam eget pharetra arcu. Cras dui nulla, ornare eget&amp;hellip;
-Nullam a risus maximus Fusce facilisis non ante quis blandit&amp;hellip;
-Donec vel accumsan justo Maecenas eu libero ac justo tempor pellentesque&amp;hellip;</description>
     </item>
     
     <item>

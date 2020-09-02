@@ -5,10 +5,7 @@ author:
 about:
   enable: true
   title: About Me
-  content: 'I am a recent college graduate passionate about using data science for good.
-  I have worked on projects related to computer security and education, housing policy, and machine learning.
-  </p><p class="lead"> I graduated from Oberlin College in May 2020 with a double major in Computer Science and Politics.
-  </p><p class="lead"> My hobbies include rock climbing, social dancing, including swing, blues, and salsa, and going to concerts and other arts events.</p>'
+  content: 'I recently graduated from Oberlin College with a double major in Computer Science and Politics. I am seeking job opportunities as a data analyst or data scientist, preferably in New York City. </p><p class="lead"> I am committed to making the world a better place through the power of data. I have analyzed everything from political voting patterns to computer science educational practices. You can find examples of my work under my <a href=https://www.elianagrosof.com/#projects>Projects</a> and <a href=https://www.elianagrosof.com/#blog>Blog</a> sections. </p><p class="lead"> I have a strong technical background, with extensive experience using Java, Python, R, and SQL. My social science background informs my analytics work, enabling me to ask the right questions and understand the significance of trends in the data. </p><p class="lead"> I am always looking to learn something new - whether it is about a new way to visualize data <link> or how European privacy regulation works. <link> </p><p class="lead"> In my spare time, I love to swing dance, rock climb, travel, and experience musical, visual, and performance art.'
   image: img/who-am-i/eliana_edited.jpg
 education:
   enable: true

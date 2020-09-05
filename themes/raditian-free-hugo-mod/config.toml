@@ -1,5 +1,4 @@
 baseURL = "/"
-longBaseUrl = "www.elianagrosof.com/"
 languageCode = "en-us"
 theme = "raditian-free-hugo-mod"
 

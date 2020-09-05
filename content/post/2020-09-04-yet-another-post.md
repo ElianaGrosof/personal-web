@@ -5,8 +5,9 @@ date: '2020-09-04'
 slug: yet-another-post
 categories: []
 tags: []
+summary: "A nice little summary here with lots of text. Oh boy."
 ---
-
+I added some text here. I hope I can see it. 
 # Contra quantaque maturior
 
 ## Sanguisque montes renovatus rauco hunc texerat dumque

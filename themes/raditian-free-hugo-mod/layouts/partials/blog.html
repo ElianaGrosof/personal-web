@@ -8,7 +8,7 @@
 
     <div class="row d-flex flex-column-reverse flex-md-row">
       <div class="row" id="recent-post-cards">
-        {{ range 3}}
+        {{ range 3 first 3 (where site.RegularPages.ByDate.Reverse "Type" "in" site.Params.mainSections )}}
           {{ partial "postbox.html" . }}
         {{ end }}
       </div>
@@ -22,7 +22,7 @@
             <div class="col-12">
                 <h2></h2>
                 <div class="row pt-2 pt-md-4">
-        <div style="font-size:70%; text-align:center;"> 
+        <div style="font-size:70%; text-align:center;">
             Icons in homepage image made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> and  <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
         </div>
 </section>

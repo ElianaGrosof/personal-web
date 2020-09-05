@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "www.elianagrosof.com/"
 languageCode = "en-us"
 theme = "raditian-free-hugo-mod"
 
@@ -55,8 +55,7 @@ theme = "raditian-free-hugo-mod"
   name = "Resume"
   URL = "resume/7-15-20_resume.pdf"
   weight = 5
-
-
+  
   [[menu.footer]]
   name = "About"
   URL = "#about"

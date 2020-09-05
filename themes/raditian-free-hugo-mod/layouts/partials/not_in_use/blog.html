@@ -1,0 +1,29 @@
+{{ if .Site.Data.homepage.projects.enable }}
+<section id="blog" class="section rad-animation-group pb-0">
+  <div class="container rad-fade-down center-block">
+    <h2 style='text-align: center;'>
+      Blog
+    </h2>
+    <p style="text-align:center;"> My most recent posts. </p>
+
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="row" id="recent-post-cards">
+          {{ $blog_pages := where .Site.RegularPages "Section" "==" "blog" }}
+          {{ range first 3 $blog_pages }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2></h2>
+                <div class="row pt-2 pt-md-4">
+        <div style="font-size:70%; text-align:center;"> 
+            Icons in homepage image made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> and  <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+</section>
+{{ end }}

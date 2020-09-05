@@ -5,7 +5,7 @@ date: '2020-08-25'
 slug: sample-post
 categories: []
 tags: []
-draft: yes
+draft: false
 summary: "A summary of sample post"
 ---
 

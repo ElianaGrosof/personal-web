@@ -5,7 +5,7 @@ date: '2020-08-25'
 slug: sample-post-2
 categories: []
 tags: []
-draft: yes
+draft: false
 summary: A summary of sample post 2. This summary is longer. Does it fix anything?
 ---
 

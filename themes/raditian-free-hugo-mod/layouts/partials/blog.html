@@ -8,7 +8,9 @@
 
     <div class="row d-flex flex-column-reverse flex-md-row">
       <div class="row" id="recent-post-cards">
+        {{ range 3}}
           {{ partial "postbox.html" . }}
+        {{ end }}
       </div>
     </div>
   </div>

@@ -8,7 +8,7 @@
 
     <div class="row d-flex flex-column-reverse flex-md-row">
       <div class="row" id="recent-post-cards">
-        {{ range first 3 (where site.RegularPages.ByDate.Reverse "Type" "in" site.Params.mainSections )}}
+        {{ range 3}}
           {{ partial "postbox.html" . }}
         {{ end }}
       </div>

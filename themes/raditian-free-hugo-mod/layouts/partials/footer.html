@@ -13,7 +13,7 @@
         {{ range first 3 .Site.Menus.footer }}
         <li class="nav-item">
           <!-- <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name | upper }}</a> -->
-          <a class="nav-link" href="www.elianagrosof.com{{ .URL | absURL }}">{{ .Name | upper }}</a>
+          <a class="nav-link" href="{ .URL | absURL }}">{{ .Name | upper }}</a>
         </li>
         {{ end }}
         <li class="nav-item">

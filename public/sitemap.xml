@@ -3,36 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/www.elianagrosof.com/</loc>
+    <loc>/</loc>
     <lastmod>2020-09-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/www.elianagrosof.com/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2020-09-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/www.elianagrosof.com/post/sept-4-post/</loc>
+    <loc>/post/sept-4-post/</loc>
     <lastmod>2020-09-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/www.elianagrosof.com/blog/</loc>
+    <loc>/blog/</loc>
     <lastmod>2020-08-25T00:22:56-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/www.elianagrosof.com/blog/lorem/</loc>
+    <loc>/blog/lorem/</loc>
     <lastmod>2020-08-25T00:22:56-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/www.elianagrosof.com/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>/www.elianagrosof.com/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>

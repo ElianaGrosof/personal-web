@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "www.elianagrosof.com/" #"/"
 languageCode = "en-us"
 theme = "raditian-free-hugo-mod"
 
@@ -80,7 +80,6 @@ theme = "raditian-free-hugo-mod"
 
 [params]
   sections = ["home", "about", "projects", "blog"]
-  #sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
 
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
 

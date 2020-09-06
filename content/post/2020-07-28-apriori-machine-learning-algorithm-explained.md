@@ -7,7 +7,7 @@ categories: []
 tags: []
 summary: A powerful yet simple ML algorithm for generating recommendations.
 ---
-<br />
+<br/>
 <br />
 
 Today, we’re going to learn about the **apriori machine learning algorithm**. Apriori, first proposed by [Agarwal and Srikant](https://www.it.uu.se/edu/course/homepage/infoutv/ht08/vldb94_rj.pdf) in 1994, is a type of Association Rule Mining algorithm that finds relationships within certain kinds of data and presents them as rules. Association Rule Mining is most commonly used in marketing, particularly in the context of shopping carts. This application area is formally known as “market basket analysis”.  

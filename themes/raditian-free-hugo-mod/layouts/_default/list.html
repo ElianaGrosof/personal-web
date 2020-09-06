@@ -1,3 +1,4 @@
+<html>
 {{ define "page_header"}}
     <head>
     {{- partial "head.html" . -}}
@@ -43,6 +44,10 @@
 {{ end }}
 
 {{ define "list_footer" }}
+<body>
   {{- partial "footer.html" . -}}
   {{- partial "base-foot.html" . -}}
+</body>
 {{ end }}
+
+</html>

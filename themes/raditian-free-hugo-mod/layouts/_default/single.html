@@ -6,19 +6,17 @@
 
     <body>
     {{- partial "header.html" . -}}
-    <script>
-        window.scrollTo(0,700);
-    </script>
-
 {{ define "main" }}
 
 <section id="single">
+    <script>
+        alert( 'Hello, world!' );
+    </script>
   <div class="main-content">
   <div class = "columns is-centered">
       <div class="column max-800px">
         <!-- add whitespace at top -->
         <br></br><br></br>
-
     <div>
         <!-- Begin Article
         ================================================== -->
@@ -101,4 +99,5 @@
 {{ define "page_footer" }}
   {{- partial "footer.html" . -}}
   {{- partial "base-foot.html" . -}}
+</body>
 {{ end }}

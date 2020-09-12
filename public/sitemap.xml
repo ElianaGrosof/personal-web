@@ -4,11 +4,21 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/apriori-maybe/</loc>
+    <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/sept-4-post/</loc>
     <lastmod>2020-09-04T00:00:00+00:00</lastmod>
   </url>
   

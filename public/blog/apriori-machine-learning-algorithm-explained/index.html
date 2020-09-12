@@ -364,7 +364,7 @@
                                 <span class="author-description">
                                     Jul 28, 2020
                                     <i class="far fa-clock clock"></i>
-                                    6 min read
+                                    7 min read
                                 </span>
                             </div>
                         </div>
@@ -437,6 +437,16 @@
 </ul>
 <h3 id="my-results--oberlin-college-classes">My results — Oberlin College classes</h3>
 <p>For my final results, I eliminated all relationships with lift=1 and sorted my relationships by confidence and lift. I made the support very, very low (I was okay with finding the relationship even if the class only appeared in 3 carts). I chose to make the support very low because my data was incomplete, there are thousands of different classes offered at Oberlin, and only 1,500 students maximum using the OPrestissimo website in any given semester. You can see my results <a href="https://github.com/ElianaGrosof/OPrestissimoRecommendations/tree/master/results">here</a>.</p>
+<p><em>Relationships</em></p>
+<p>I found that apriori mostly discovered classes that were pre-requisites and co-requisites, like the Plant Systematics biology class and its associated lab. For that reason, I found that certain Conservatory music classes were most likely to appear in carts together, which makes sense because the Oberlin Conservatory has many classes that all of their students are required to take.</p>
+<p>When I started this project, I was hoping to find a few interesting cross-departmental class relationships, and I did find a few, admittedly with very low support. A couple examples:</p>
+<ul>
+<li><em>Inorganic Chemistry</em> and <em>Electricity, Magnetism, and Thermodynamics</em> were related. Since they are both non-intro classes in the Biology and Physics departments respectively, it suggests that second years who are interested in Physics might also enjoy taking the Inorganic Biology, or vice versa.</li>
+<li><em>Intro to Writing Poetry</em> and <em>an intro art class</em> also appeared together, suggesting that students interested in the humanities might want to look at classes in different departments in addition to the one they feel most intuitively attracted to.</li>
+</ul>
+<p>Note: for relationships with low support, confidence is a better metric to look at than lift because lift tends to be unreasonably high when the support is small.</p>
+<p>This application demonstrates that sometimes lowering the support can reveal more interesting and non-intuitive relationships within a dataset, which is <em>why the hyperparameters are very important for this algorithm</em>.</p>
+<p><em>Questions? Comments? Feedback? Reach out to me in the comments section or on LinkedIn.</em></p>
 
                     </div>
 
@@ -451,10 +461,8 @@
                     
                     <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
                     
-                        <a class="d-block col-md-6" href="/blog/lorem/"> &laquo; This Post is Full of Lorem Ipsum</a>
+                        <a class="d-block col-md-6" href="/blog/apriori-machine-learning-algorithm-explained/"> &laquo; Apriori Machine Learning Algorithm, Explained</a>
                     
-                    
-                        <a class="d-block col-md-6 text-right" href="/blog/apriori-machine-learning-algorithm-explained/">Apriori Machine Learning Algorithm, Explained &raquo;</a>
                     
                     <div class="clearfix"></div>
                     </div>
@@ -516,63 +524,6 @@
 </footer>
 <script src='/js/rad-animations.js'></script>
 <script src='/js/library/lozad.min.js'></script>
-<script>
-  window.addEventListener("load", function() {
-    var observer = window.lozad(".lozad", {
-      rootMargin: window.innerHeight / 2 + "px 0px",
-      threshold: 0.01
-    }); 
-    observer.observe();
-  });
-</script>
-<script src='/js/library/jquery-3.3.1.slim.min.js'></script>
-<script src='/js/library/bootstrap.min.js'></script>
-<script src='/js/sticky-header.js'></script>
-<script src='/js/library/smooth-scroll.polyfills.min.js'></script>
-<script src='/js/library/fontfaceobserver.js'></script>
-<script>
-  (function(w) {
-    
-    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
-      return;
-    }
-    var fontA = new w.FontFaceObserver("Inter", {
-      weight: 300
-    });
-    var fontB = new w.FontFaceObserver("Inter", {
-      weight: 400
-    });
-    var fontC = new w.FontFaceObserver("Inter", {
-      weight: 500
-    });
-    var fontD = new w.FontFaceObserver("Inter", {
-      weight: 600
-    });
-    var fontE = new w.FontFaceObserver("Inter", {
-      weight: 700
-    });
-    var fontF = new w.FontFaceObserver("Inter", {
-      weight: 900
-    });
-    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
-      w.document.documentElement.className += " fonts-loaded";
-    });
-  })(this);
-</script>
-<script>
-  const scroll = new SmoothScroll('a[href*="#"]');
-    $('a.nav-link').on('click', () => {
-      const navbar = $('.navbar-collapse');
-      if (navbar && navbar.hasClass('show')) {
-        $('.navbar-toggler').click();
-      }
-    })
-</script>
-
-        </div>
-    </body>
-</html>
-in.js'></script>
 <script>
   window.addEventListener("load", function() {
     var observer = window.lozad(".lozad", {

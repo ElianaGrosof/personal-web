@@ -1,23 +1,19 @@
 {{ define "page_header"}}
     <head>
-    {{- partial "head_custom.html" . -}}
+    {{- partial "head_single.html" . -}}
     </head>
 {{ end }}
 
     <body>
-    {{- partial "header.html" . -}}
+    {{- partial "header_single.html" . -}}
 {{ define "main" }}
 
 <section id="single">
-    <script>
-        alert( 'Hello, world!' );
-    </script>
   <div class="main-content">
   <div class = "columns is-centered">
       <div class="column max-800px">
         <!-- add whitespace at top -->
         <br></br><br></br>
-    <div>
         <!-- Begin Article
         ================================================== -->
         <div class="columns is-centered" id="title">
@@ -79,7 +75,7 @@
                     <!-- End Next and PrevPage -->
                 </div>
                 </div>
-    </div>
+                </div>
                 <!-- End Post -->
             </div>
         </div>

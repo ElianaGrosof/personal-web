@@ -25,7 +25,7 @@ theme = "raditian-free-hugo-mod"
 
   # JS Plugins
   [[params.plugins.js]]
-  URL = "js/rad-animations.js"
+  URL = "js/rad-animations-single.js"
   [[params.plugins.js]]
   URL = "js/sticky-header.js"
   [[params.plugins.js]]

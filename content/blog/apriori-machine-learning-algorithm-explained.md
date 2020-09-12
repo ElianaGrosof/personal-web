@@ -20,9 +20,9 @@ In the broadest possible terms, the apriori algorithm takes a bunch of sets of i
 
 Compared to some other machine learning algorithms, the results of apriori can seem a little anti-climactic, but the advantage is that you can easily understand the output. If this general approach is good enough for Amazon, it’s good enough for me.Let’s get into the details.
 ### Key Terms
-*Itemsets*: an itemset is collection of related items. In our application, it is a list of classes that an Oberlin student considered taking in the same semester, represented as a “cart” of classes. Another example of an itemset is the items in a grocery store shopping cart, like “Bread, Eggs, Diapers”.
-*Antecedent*: the first item in the itemset that I care about
-*Consequent*: the second item in the itemset that I care about
+*Itemsets*: an itemset is collection of related items. In our application, it is a list of classes that an Oberlin student considered taking in the same semester, represented as a “cart” of classes. Another example of an itemset is the items in a grocery store shopping cart, like “Bread, Eggs, Diapers”. 
+*Antecedent*: the first item in the itemset that I care about 
+*Consequent*: the second item in the itemset that I care about 
 _**Rule**_: antecedent → consequent relationship 
 ### Measures of Strength of Rules
 *How strong is the relationship, really?*  
@@ -94,6 +94,6 @@ When I started this project, I was hoping to find a few interesting cross-depart
 
 Note: for relationships with low support, confidence is a better metric to look at than lift because lift tends to be unreasonably high when the support is small.
 
-This application demonstrates that sometimes lowering the support can reveal more interesting and non-intuitive relationships within a dataset, which is why **the hyperparameters are very important for this algorithm**. 
+This application demonstrates that sometimes lowering the support can reveal more interesting and non-intuitive relationships within a dataset, which is _why the hyperparameters are very important for this algorithm_. 
 
 *Questions? Comments? Feedback? Reach out to me in the comments section or on LinkedIn.*

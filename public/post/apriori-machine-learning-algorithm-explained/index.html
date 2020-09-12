@@ -379,17 +379,14 @@
 
                     
                     <div class="article-post">
-                        <!-- raw HTML omitted -->
-<p>Today, we’re going to learn about the <strong>apriori machine learning algorithm</strong>. Apriori, first proposed by <a href="https://www.it.uu.se/edu/course/homepage/infoutv/ht08/vldb94_rj.pdf">Agarwal and Srikant</a> in 1994, is a type of Association Rule Mining algorithm that finds relationships within certain kinds of data and presents them as rules. Association Rule Mining is most commonly used in marketing, particularly in the context of shopping carts. This application area is formally known as “market basket analysis”.</p>
-<p>We’re going to use apriori to learn about the relationships between Oberlin College courses. If you want to follow along, check out my <a href="https://github.com/ElianaGrosof/OPrestissimoRecommendations">GitHub repository</a>.</p>
+                        <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>Today, we’re going to learn about the <strong>apriori machine learning algorithm</strong>. Apriori, first proposed by <a href="https://www.it.uu.se/edu/course/homepage/infoutv/ht08/vldb94_rj.pdf">Agarwal and Srikant</a> in 1994, is a type of Association Rule Mining algorithm that finds relationships within certain kinds of data and presents them as rules. Association Rule Mining is most commonly used in marketing, particularly in the context of shopping carts. This application area is formally known as “market basket analysis”.We’re going to use apriori to learn about the relationships between Oberlin College courses. If you want to follow along, check out my <a href="https://github.com/ElianaGrosof/OPrestissimoRecommendations">GitHub repository</a>.</p>
 <h3 id="the-data">The data</h3>
-<p>Oberlin College students built a <a href="http://oprestissimo.com/">handy website</a> that lets students evaluate different courses options by adding classes to a virtual cart. After some hard work and perseverance, we generated a <a href="https://github.com/ElianaGrosof/OPrestissimoRecommendations/blob/master/data/converted_carts.csv">file</a> where each line contains a list of classes that a student considered taking at the same time. For example, if a student considered taking Economics 101 and Biology 100 in Fall 2020, we would have a line in our csv file that looks like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ECON_101, BIOL_100
-</code></pre></div><h3 id="the-algorithm--a-brief-overview">The algorithm — a brief overview</h3>
-<p><em>Note: if you want to skip to the details, go to “algorithm — the details” section.</em>
-In the broadest possible terms, the apriori algorithm takes a bunch of sets of items (known as <em>itemsets</em>), calculates some measures regarding the strength of relationships between items (<em>support, confidence, lift</em>), and presents those relationships as rules.</p>
-<p>Compared to some other machine learning algorithms, the results of apriori can seem a little anti-climactic, but the advantage is that you can easily understand the output. If this general approach is good enough for Amazon, it’s good enough for me.</p>
-<p>Let’s get into the details.</p>
+<p>Oberlin College students built a <a href="http://oprestissimo.com/">handy website</a> that lets students evaluate different courses options by adding classes to a virtual cart. After some hard work and perseverance, we generated a <a href="https://github.com/ElianaGrosof/OPrestissimoRecommendations/blob/master/data/converted_carts.csv">file</a> where each line contains a list of classes that a student considered taking at the same time. For example, if a student considered taking Economics 101 and Biology 100 in Fall 2020, we would have a line in our csv file that looks like:<code>shECON_101, BIOL_100</code></p>
+<h3 id="the-algorithm--a-brief-overview">The algorithm — a brief overview</h3>
+<p><em>Note: if you want to skip to the details, go to “algorithm — the details” section.</em></p>
+<p>In the broadest possible terms, the apriori algorithm takes a bunch of sets of items (known as <em>itemsets</em>), calculates some measures regarding the strength of relationships between items (<em>support, confidence, lift</em>), and presents those relationships as rules.</p>
+<p>Compared to some other machine learning algorithms, the results of apriori can seem a little anti-climactic, but the advantage is that you can easily understand the output. If this general approach is good enough for Amazon, it’s good enough for me.Let’s get into the details.</p>
 <h3 id="key-terms">Key Terms</h3>
 <p><em>Itemsets</em>: an itemset is collection of related items. In our application, it is a list of classes that an Oberlin student considered taking in the same semester, represented as a “cart” of classes. Another example of an itemset is the items in a grocery store shopping cart, like “Bread, Eggs, Diapers”.
 <em>Antecedent</em>: the first item in the itemset that I care about
@@ -397,18 +394,16 @@ In the broadest possible terms, the apriori algorithm takes a bunch of sets of i
 <em><strong>Rule</strong></em>: antecedent → consequent relationship</p>
 <h3 id="measures-of-strength-of-rules">Measures of Strength of Rules</h3>
 <p><em>How strong is the relationship, really?</em></p>
-<p>Assume we’ve divided our itemsets into lots of little rules. In this section, we want to understand how strong the rules are.</p>
-<p>Using our example from above, we know Economics 101 and Biology 100 are associated because a student thought about taking them at the same time. But, how strong is their relationship? Are they just friends, or are they something more? We’ll answer this question using 3 measures.</p>
-<p>The three main ways to understand how strong the relationship between items in an itemset are:</p>
+<p>Assume we’ve divided our itemsets into lots of little rules. In this section, we want to understand how strong the rules are.Using our example from above, we know Economics 101 and Biology 100 are associated because a student thought about taking them at the same time. But, how strong is their relationship? Are they just friends, or are they something more? We’ll answer this question using 3 measures.The three main ways to understand how strong the relationship between items in an itemset are:</p>
 <ul>
 <li>Support</li>
 <li>Confidence</li>
 <li>Lift</li>
 </ul>
 <h3 id="support">Support</h3>
-<p>Support tells us how often a given item was chosen. In our example, it tells us the absolute popularity of a class.</p>
-<p>Given class A and the rest of classes offered ~A (not A), the calculation for support is:</p>
-<p><img src="support_image.png#center" alt="support_calculation"></p>
+<p>Support tells us how often a given item was chosen. In our example, it tells us the absolute popularity of a class.Given class A and the rest of classes offered ~A (not A), the calculation for support is:<br>
+<img src="support_image.png" alt="support_calc">
+<img src="support_image.png" alt="support_calculation">  #center</p>
 
                     </div>
 
@@ -423,10 +418,8 @@ In the broadest possible terms, the apriori algorithm takes a bunch of sets of i
                     
                     <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
                     
-                        <a class="d-block col-md-6" href="/post/sept-4-post/"> &laquo; Sept 4 Post</a>
+                        <a class="d-block col-md-6" href="/post/apriori-machine-learning-algorithm-explained/"> &laquo; Apriori Machine Learning Algorithm, Explained</a>
                     
-                    
-                        <a class="d-block col-md-6 text-right" href="/post/apriori-machine-learning-algorithm-explained/">Apriori Machine Learning Algorithm, Explained &raquo;</a>
                     
                     <div class="clearfix"></div>
                     </div>

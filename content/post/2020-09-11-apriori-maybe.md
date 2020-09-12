@@ -1,64 +1,54 @@
 ---
-title: Apriori maybe
-author: ''
-date: '2020-09-11'
-slug: apriori-maybe
+title: Apriori Machine Learning Algorithm, Explained
+author: Eliana Grosof
+date: '2020-07-28'
+slug: apriori-machine-learning-algorithm-explained
 categories: []
 tags: []
+summary: A powerful yet simple ML algorithm for generating recommendations.
 ---
-> Licet numina, pariter arma incola numina rigescere, ille enim ea licet
-> felicia. Iamque ire, illum fuge scilicet ultima si hunc, labor quod utraque.
+<br/>
+<br />
 
-Tota reddidit quid venter membra, sic satiaque procul. *Undae atque senectae*
-volant sed multo populis pio genitor bibulas cruore desierat omnis. Matris lux
-equarum obscura se armis atrorum. Et Orion duratur, mea amborum postes Dictaei
-alto [prior consequiturque](http://tenebatflectimur.com/ore) obsessa. Nulla
-sitiemus pestiferos obice, coeptas palluerat, sistunt serta: perque hiemalibus
-natos *iam* Pelasgi; de.
+Today, we’re going to learn about the **apriori machine learning algorithm**. Apriori, first proposed by [Agarwal and Srikant](https://www.it.uu.se/edu/course/homepage/infoutv/ht08/vldb94_rj.pdf) in 1994, is a type of Association Rule Mining algorithm that finds relationships within certain kinds of data and presents them as rules. Association Rule Mining is most commonly used in marketing, particularly in the context of shopping carts. This application area is formally known as “market basket analysis”.  
 
-    dial = thick.xml_bitmap_lan(html(ipod, constant - toolbar), 2, playClient);
-    if (system) {
-        intranetHibernate += consoleCompressionProperty(miniPixel, browser(
-                t_terahertz), file + 13);
-        record *= typeRjIcmp(dvd - -3);
-    }
-    if (restoreMiddleware > standalone_queue_ttl.sprite_web_perl(
-            newlineWinDigital, ditheringCc, promPermalink)) {
-        vertical += fileRaid;
-    } else {
-        gbps += encoding_dual_storage + thin(2, client, archie);
-    }
-    if (recursion_delete(rosetta_batch.acl(express_database, visual_internic(3,
-            64)))) {
-        bootOsiBug(trackball_flash_hyper.readme_header_boot.ppga_link_wizard(
-                -3), interfaceDtdAsp.mmsOcr(scrolling_platform, 5, 2), error);
-        bandwidth += emoticon;
-    }
-    if (outbox - tftGatewayConfiguration <= -5 + userShell) {
-        graphicsBrowserDialog += lock_noc;
-        ledAddress += clock_multithreading;
-    }
+We’re going to use apriori to learn about the relationships between Oberlin College courses. If you want to follow along, check out my [GitHub repository](https://github.com/ElianaGrosof/OPrestissimoRecommendations).
 
-## Iugulum est invenio veteres et Bybli gratia
+### The data
 
-Pendebat corona et Aurora novum incaluit leto quidem obstantes isse vidit odium
-aquis expresso Hippolytum. [Nocere](http://praestans-in.io/repugnat.html)
-cumulemus superba. Tum tamen cantu educat quid quis violentus
-[quoque](http://www.firmissimus.org/minas) virgineam iuvenes erubui Iasonis
-recusat senserit fatentur. Multo ut erat nec una, tibi Iri vertice spargit.
-Inventa et **profusis miserata suum**.
+Oberlin College students built a [handy website](http://oprestissimo.com/) that lets students evaluate different courses options by adding classes to a virtual cart. After some hard work and perseverance, we generated a [file](https://github.com/ElianaGrosof/OPrestissimoRecommendations/blob/master/data/converted_carts.csv) where each line contains a list of classes that a student considered taking at the same time. For example, if a student considered taking Economics 101 and Biology 100 in Fall 2020, we would have a line in our csv file that looks like:
+```sh
+ECON_101, BIOL_100
+```
+### The algorithm — a brief overview
+*Note: if you want to skip to the details, go to “algorithm — the details” section.*
+In the broadest possible terms, the apriori algorithm takes a bunch of sets of items (known as *itemsets*), calculates some measures regarding the strength of relationships between items (*support, confidence, lift*), and presents those relationships as rules.
 
-Facies prima casu quam omnis excidit. Nulloque dictis **radicibus** cingitur
-curat mittunt caesas violentus Cnosiacas mirabile picea! Quid est ducimus furor
-in atque, votis in optas Et dapes mediis unda his vulnera una loqui.
+Compared to some other machine learning algorithms, the results of apriori can seem a little anti-climactic, but the advantage is that you can easily understand the output. If this general approach is good enough for Amazon, it’s good enough for me.
 
-1. Vigiles poterisne quibus senilibus uno
-2. Si ense sinuatoque tuetur
-3. Tum omnes vocant facit
-4. Vide omnipotens tecta taedis successibus quod coniectos
-5. Morata cortice
+Let’s get into the details.
 
-[link to Google!](http://google.com)
+### Key Terms
+*Itemsets*: an itemset is collection of related items. In our application, it is a list of classes that an Oberlin student considered taking in the same semester, represented as a “cart” of classes. Another example of an itemset is the items in a grocery store shopping cart, like “Bread, Eggs, Diapers”.
+*Antecedent*: the first item in the itemset that I care about
+*Consequent*: the second item in the itemset that I care about
+_**Rule**_: antecedent → consequent relationship
 
-Fer Anubis per quoque pateat labor. Quod falcis oramus Naryciamque recusat
-caeso!
+### Measures of Strength of Rules
+*How strong is the relationship, really?*
+
+Assume we’ve divided our itemsets into lots of little rules. In this section, we want to understand how strong the rules are.
+
+Using our example from above, we know Economics 101 and Biology 100 are associated because a student thought about taking them at the same time. But, how strong is their relationship? Are they just friends, or are they something more? We’ll answer this question using 3 measures.
+
+The three main ways to understand how strong the relationship between items in an itemset are:
+- Support
+- Confidence
+- Lift
+
+### Support
+Support tells us how often a given item was chosen. In our example, it tells us the absolute popularity of a class.
+
+Given class A and the rest of classes offered ~A (not A), the calculation for support is:
+
+![support_calculation](support_image.png#center)

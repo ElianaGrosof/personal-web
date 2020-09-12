@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
 
-<link rel="canonical" href="/post/sept-4-post/" />
+<link rel="canonical" href="/blog/apriori-machine-learning-algorithm-explained/" />
 
 
 <script>
@@ -355,16 +355,16 @@
                 <div class="col-md-9 flex-first flex-md-unordered">
                     <div class="mainheading">
                       
-                      <h1 class="posttitle">Sept 4 Post</h1>
+                      <h1 class="posttitle">Apriori Machine Learning Algorithm, Explained</h1>
                         
                         
                         <div class="row post-top-meta">
                             <div class="col-xs-12 col-md-9 col-10 text-center text-md-left md-pad-left">
                                 <a target="_blank" class="link-dark">by Eliana Grosof</a><br>
                                 <span class="author-description">
-                                    Sep 4, 2020
+                                    Jul 28, 2020
                                     <i class="far fa-clock clock"></i>
-                                    2 min read
+                                    3 min read
                                 </span>
                             </div>
                         </div>
@@ -379,51 +379,30 @@
 
                     
                     <div class="article-post">
-                        <h1 id="tendens-me-totidem-poenae-lapitharum-nullus-pestis">Tendens me totidem poenae Lapitharum nullus pestis</h1>
-<h2 id="ignemque-aurum-videritis">Ignemque aurum videritis</h2>
-<p><a href="http://www.stetit.io/">Lorem</a> markdownum, rates in tempora accipe: perdam
-excivere. <strong>Leto retroque</strong>, altis et formae cacumine, est, de ante tophis et
-pericula nebulas, egi!</p>
-<pre><code>blacklist = remote.array_graphic_restore(errorPciLion, cdfs, clock) +
-        truncateScrollingInput(4, denial(ivr), animated);
-banner_ddl(5 + network);
-defragment_boot_key = file_primary(pum.menu_veronica(-3, party_and_eup),
-        station);
-</code></pre>
-<h2 id="iam-iam-noceat-noctem-vincla">Iam iam noceat Noctem vincla</h2>
-<p>Apta nisi erat terram iam, mihi dulcedine pellis excussit, aut sors. Non
-latebras tenuique atque, nepos redeo Lucifer amantem vita talaribus mandat
-populo Ne quae. Dea in opus cognoscendus omnia struxisse tamen et quidem vacuas.
-Sive nata inpositum Athenas coloni tela: sedesque Cupidinis tellure Phineus.</p>
-<p>Phrygiae est agant in munitos palmis, postquam hic huius, inperfecta Acheloe
-Icelon cuspide. Primus di miserum atque dicere creaverat mater, utero animos
-fuit conveniet volentem! Haud stamina ingentibus Mensis domus malleus et, tibi
-est nunc.</p>
-<h2 id="ignibus-iuvenis">Ignibus iuvenis</h2>
-<p>Urguet subsunt haud consiliis numquam <strong>traxit clamant vultus</strong>: inde nobilium.
-Aeolidae data sonos nec iuris Hippasus monilia, pondere sine inmansuetique
-lacertosi aura deae petis. Quo voxque est flexit collum utar natum saxo, est
-violenta super usum soror victos duro.</p>
-<p>Aer et Achivos letique fidemque texitur.
-<a href="http://fessis.com/amorhaec.aspx">Iunctim</a> umbra quoque; quam deae adde viribus
-florem adeunda tamen sibi Arctos opposuitque dedit triplicis. Praelatus est,
-serpit vidit totidemque fuit, retracto supposito ortas miserum modo, <a href="http://www.micantes-umeri.com/cymeli">generatus
-in</a> visa, sua. Te illa crudelius ponit
-equique Lucifero alumno. Ora indomitas alto alter.</p>
-<h2 id="et-petis-militiae-prosit-adsuetaque-paris">Et petis militiae prosit adsuetaque Paris</h2>
-<p>Ut vela nescia, ferebam curarum micantia decet adeunda? Gurgite dilapsum
-urbesque <em>Aeacidae adoratis</em>, luxuriem tua; grave nunc vetustas
-<a href="http://www.teretiliberfemineae.io/">at</a> videtur. Voce conterit si vulnera
-caelum Aestas alis virga, sine.</p>
+                        <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>Today, we’re going to learn about the <strong>apriori machine learning algorithm</strong>. Apriori, first proposed by <a href="https://www.it.uu.se/edu/course/homepage/infoutv/ht08/vldb94_rj.pdf">Agarwal and Srikant</a> in 1994, is a type of Association Rule Mining algorithm that finds relationships within certain kinds of data and presents them as rules. Association Rule Mining is most commonly used in marketing, particularly in the context of shopping carts. This application area is formally known as “market basket analysis”.We’re going to use apriori to learn about the relationships between Oberlin College courses. If you want to follow along, check out my <a href="https://github.com/ElianaGrosof/OPrestissimoRecommendations">GitHub repository</a>.</p>
+<h3 id="the-data">The data</h3>
+<p>Oberlin College students built a <a href="http://oprestissimo.com/">handy website</a> that lets students evaluate different courses options by adding classes to a virtual cart. After some hard work and perseverance, we generated a <a href="https://github.com/ElianaGrosof/OPrestissimoRecommendations/blob/master/data/converted_carts.csv">file</a> where each line contains a list of classes that a student considered taking at the same time. For example, if a student considered taking Economics 101 and Biology 100 in Fall 2020, we would have a line in our csv file that looks like:<code>shECON_101, BIOL_100</code></p>
+<h3 id="the-algorithm--a-brief-overview">The algorithm — a brief overview</h3>
+<p><em>Note: if you want to skip to the details, go to “algorithm — the details” section.</em></p>
+<p>In the broadest possible terms, the apriori algorithm takes a bunch of sets of items (known as <em>itemsets</em>), calculates some measures regarding the strength of relationships between items (<em>support, confidence, lift</em>), and presents those relationships as rules.</p>
+<p>Compared to some other machine learning algorithms, the results of apriori can seem a little anti-climactic, but the advantage is that you can easily understand the output. If this general approach is good enough for Amazon, it’s good enough for me.Let’s get into the details.</p>
+<h3 id="key-terms">Key Terms</h3>
+<p><em>Itemsets</em>: an itemset is collection of related items. In our application, it is a list of classes that an Oberlin student considered taking in the same semester, represented as a “cart” of classes. Another example of an itemset is the items in a grocery store shopping cart, like “Bread, Eggs, Diapers”.
+<em>Antecedent</em>: the first item in the itemset that I care about
+<em>Consequent</em>: the second item in the itemset that I care about
+<em><strong>Rule</strong></em>: antecedent → consequent relationship</p>
+<h3 id="measures-of-strength-of-rules">Measures of Strength of Rules</h3>
+<p><em>How strong is the relationship, really?</em></p>
+<p>Assume we’ve divided our itemsets into lots of little rules. In this section, we want to understand how strong the rules are.Using our example from above, we know Economics 101 and Biology 100 are associated because a student thought about taking them at the same time. But, how strong is their relationship? Are they just friends, or are they something more? We’ll answer this question using 3 measures.The three main ways to understand how strong the relationship between items in an itemset are:</p>
 <ul>
-<li>Contemptus quercus iuris consequiturque ramis deseruit pondera</li>
-<li>Prodere tamen</li>
-<li>Constitit nobis caelestibus ubi</li>
+<li>Support</li>
+<li>Confidence</li>
+<li>Lift</li>
 </ul>
-<p>Lunae sit tantoque, sponte mane <em>triplex</em>, edita, prodierat te. Volat terram
-Chimaeriferae animus cornum liceat foribus et nonaque urbis armandique Aphareia!
-Et tuta, pedem erat exsiluere quidem finita recentibus redeuntia <strong>Aside
-decimo</strong> lapides exitium solus cervice, non?</p>
+<h3 id="support">Support</h3>
+<p>Support tells us how often a given item was chosen. In our example, it tells us the absolute popularity of a class.Given class A and the rest of classes offered ~A (not A), the calculation for support is:
+<img src="support_image.png#center" alt="support_calculation"></p>
 
                     </div>
 
@@ -438,8 +417,10 @@ decimo</strong> lapides exitium solus cervice, non?</p>
                     
                     <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
                     
+                        <a class="d-block col-md-6" href="/blog/lorem/"> &laquo; This Post is Full of Lorem Ipsum</a>
                     
-                        <a class="d-block col-md-6 text-right" href="/post/apriori-machine-learning-algorithm-explained/">Apriori Machine Learning Algorithm, Explained &raquo;</a>
+                    
+                        <a class="d-block col-md-6 text-right" href="/blog/apriori-machine-learning-algorithm-explained/">Apriori Machine Learning Algorithm, Explained &raquo;</a>
                     
                     <div class="clearfix"></div>
                     </div>

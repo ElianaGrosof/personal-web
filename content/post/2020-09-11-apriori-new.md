@@ -6,45 +6,74 @@ slug: apriori-new
 categories: []
 tags: []
 ---
-Today, we’re going to learn about the **apriori machine learning algorithm**. Apriori, first proposed by [Agarwal and Srikant](https://www.it.uu.se/edu/course/homepage/infoutv/ht08/vldb94_rj.pdf) in 1994, is a type of Association Rule Mining algorithm that finds relationships within certain kinds of data and presents them as rules. Association Rule Mining is most commonly used in marketing, particularly in the context of shopping carts. This application area is formally known as “market basket analysis”.  
+# Optime est
 
-We’re going to use apriori to learn about the relationships between Oberlin College courses. If you want to follow along, check out my [GitHub repository](https://github.com/ElianaGrosof/OPrestissimoRecommendations).
+## Exit dies ferrum Cycno Cupidinis et tibi
 
-### The data
+Lorem markdownum memor et positis **referat**, sed luco curvi tollebar curre
+genu placida magnae saxo spoliis! Placandam leves dextraeque amor: inanem
+ultorque ad tamen diversa sed caput numina, ortu saucius an. Movi umeroque quam
+procul aequora et nunc iterum parentem corpus liventia Atlantis Thermodontiaca
+*iuste*, sui!
 
-Oberlin College students built a [handy website](http://oprestissimo.com/) that lets students evaluate different courses options by adding classes to a virtual cart. After some hard work and perseverance, we generated a [file](https://github.com/ElianaGrosof/OPrestissimoRecommendations/blob/master/data/converted_carts.csv) where each line contains a list of classes that a student considered taking at the same time. For example, if a student considered taking Economics 101 and Biology 100 in Fall 2020, we would have a line in our csv file that looks like:
-```sh
-ECON_101, BIOL_100
-```
-### The algorithm — a brief overview
-*Note: if you want to skip to the details, go to “algorithm — the details” section.*
-In the broadest possible terms, the apriori algorithm takes a bunch of sets of items (known as *itemsets*), calculates some measures regarding the strength of relationships between items (*support, confidence, lift*), and presents those relationships as rules.
+    if (64 + driver) {
+        userRjFile(padEHdd, download + dv);
+        newbie = pack_interlaced + serviceUser;
+    }
+    if (targetVirtualRecord) {
+        virtual.rwImportCard(laptopBitrateSchema);
+        markupFinderBoot.macintoshSystrayMarketing += favorites_meme_sector;
+        user -= waveformCtp + cps + clock;
+    } else {
+        disk.gnu = webmasterOopMail;
+    }
+    scanner = aluServerDevelopment + yahooNewbieEmoticon(-5) + 2;
 
-Compared to some other machine learning algorithms, the results of apriori can seem a little anti-climactic, but the advantage is that you can easily understand the output. If this general approach is good enough for Amazon, it’s good enough for me.
+Contra laverat et sibi canes bucina turbavere [raptu montes
+ligno](http://www.iovis.net/causa). Aevum super minimam turpe, **qua se qui**
+erat Alcides Priamoque. Sic tepido manibus ratibusque sanguine non levavit pete.
 
-Let’s get into the details.
+## Male excidit inde errat carius petit albentibus
 
-### Key Terms
-*Itemsets*: an itemset is collection of related items. In our application, it is a list of classes that an Oberlin student considered taking in the same semester, represented as a “cart” of classes. Another example of an itemset is the items in a grocery store shopping cart, like “Bread, Eggs, Diapers”.
-*Antecedent*: the first item in the itemset that I care about
-*Consequent*: the second item in the itemset that I care about
-_**Rule**_: antecedent → consequent relationship
+Modo antra pater tamen sciet Eleis munus versa summisque se ille, facti tuta
+dixit. Poenas et *lapis toto* cupit id illi iniectos Phrygiae adulantes movere
+orbis. Et vita. Dominam qua non ubi dumque gutture thalami neve, ab linguae
+nomina aestusque parens, pulmonibus et!
 
-### Measures of Strength of Rules
-*How strong is the relationship, really?*
+    if (quicktimeParty) {
+        servlet(serialNybbleFile);
+        clockPlug += power.torrentAdPoint(sambaFileLifo);
+        cad_market.compiler_ppi_compact += snowRdfSprite;
+    } else {
+        file_friendly = market_sprite + tooltip;
+        monochrome.srgbSoDefault.formatKvm(vector(systemMapThin),
+                trashAutoresponder);
+        reader = -3 * -4;
+    }
+    pcmcia_remote -= cybersquatter_shift(cronSoft(17 - hover, oasis(volume,
+            video, ibmShortcut), fileSdram), hddLpiDrop(snippet_engine_ibm +
+            leaderboard, crop));
+    dma_adware_compatible += controlCapacityWpa(viewWindows / symbolicDefault +
+            -3, keyboardTemplateSoftware, bitmap);
+    mainframeRepeater.socketChipsetUser = ipadHttpSyntax(eide_signature,
+            hoverSound) + menu(5) + barSoapDesign;
+    if (image(tokenNumE) != reality_format_network(35, troll,
+            san_boot_configuration) / multiEthicsPoint) {
+        httpBroadband = jsp_language + suffix + firmware;
+        wiki_dvi /= state;
+    }
 
-Assume we’ve divided our itemsets into lots of little rules. In this section, we want to understand how strong the rules are.
+Erant iugo, solo se tuos tempore, *illis erat aquis*! Hirsutus nudaque adveniet;
+tenebris **si** ignes moras abstulit Hiberis, habuisse ut petit *liquido
+murice*.
 
-Using our example from above, we know Economics 101 and Biology 100 are associated because a student thought about taking them at the same time. But, how strong is their relationship? Are they just friends, or are they something more? We’ll answer this question using 3 measures.
+## Membris ignes
 
-The three main ways to understand how strong the relationship between items in an itemset are:
-- Support
-- Confidence
-- Lift
+Relinquere iuguli discrimen dryades *non Aganippe* pater domibus ratione genua
+vinum, vulnera canis triumphis praemia. Vobis belloque hactenus et regna tibi si
+alis? Sine tum **loquendi rapit**, modo vecti abest est fertis, funeribus, est?
 
-### Support
-Support tells us how often a given item was chosen. In our example, it tells us the absolute popularity of a class.
-
-Given class A and the rest of classes offered ~A (not A), the calculation for support is:
-
-![support_calculation](support_image.png#center)
+1. Infelix de qui sibi victa
+2. Fatis tum pendebant
+3. In laetos falsum urget
+4. A corpus

@@ -1,0 +1,100 @@
+{{ define "page_header"}}
+    <head>
+    {{- partial "head.html" . -}}
+    </head>
+    <body>
+    {{- partial "header.html" . -}}
+    </body>
+{{ end }}
+
+{{ define "main" }}
+
+<section id="single">
+<div class="section section--border-bottom columns is-centered" >
+  <div class="container"></div>
+  <div class="main-content">
+  <div class = "columns is-centered">
+      <div class="column max-800px">
+        <!-- add whitespace at top -->
+        <br></br><br></br>
+
+    <div class="rad-animation-group rad-fade-down">
+        <!-- Begin Article
+        ================================================== -->
+        <div class="columns is-centered" id="title">
+                <!-- Post -->
+                <div class="col-md-9 flex-first flex-md-unordered">
+                    <div class="mainheading">
+                      <!-- Post Title -->
+                      <h1 class="posttitle">{{ .Title }}</h1>
+                        <!-- Author Box -->
+                        {{if isset .Site.Data.homepage.author "name"}}
+                        <div class="row post-top-meta">
+                            <div class="col-xs-12 col-md-9 col-10 text-center text-md-left md-pad-left">
+                                <a target="_blank" class="link-dark">{{ .Site.Data.homepage.author.name }}</a><br>
+                                <span class="author-description">
+                                    {{ dateFormat "Jan 2, 2006" .PublishDate }}
+                                    <i class="far fa-clock clock"></i>
+                                    {{ .ReadingTime }} min read
+                                </span>
+                            </div>
+                        </div>
+                        {{end}}
+                    </div>
+
+                    <!-- Post Featured Image -->
+                    {{$images := .Resources.ByType "image"}}
+                    {{with $images.GetMatch "*cover*" }}
+                        <img class="featured-image img-fluid" src="{{ .Permalink }}" alt="thumbnail for this post">
+                    {{end}}
+
+                    <!-- End Featured Image -->
+
+                    <!-- Post Content -->
+                    <div class="article-post">
+                        {{ .Content}}
+                    </div>
+
+                    <!-- Post Categories -->
+                    <div class="after-post-tags">
+                        <ul class="tags">
+                        {{ range .Params.tags }}
+                        <li>
+                        <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{.}}</a>
+                        </li>
+                        {{ end }}
+                        </ul>
+                    </div>
+                    <!-- End Categories -->
+
+                    <!-- Next and PrevPage inside current section -->
+                    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                    {{with .NextInSection}}
+                        <a class="d-block col-md-6" href="{{.Permalink}}"> &laquo; {{.Title}}</a>
+                    {{end}}
+                    {{with .PrevInSection}}
+                        <a class="d-block col-md-6 text-right" href="{{.Permalink}}">{{.Title}} &raquo;</a>
+                    {{end}}
+                    <div class="clearfix"></div>
+                    </div>
+                    <!-- End Next and PrevPage -->
+                </div>
+                </div>
+    </div>
+                <!-- End Post -->
+            </div>
+        </div>
+        <!-- End Article
+        ================================================== -->
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+{{ end }}
+
+{{ define "page_footer" }}
+  {{- partial "footer.html" . -}}
+  {{- partial "base-foot.html" . -}}
+{{ end }}

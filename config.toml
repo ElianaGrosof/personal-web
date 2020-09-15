@@ -78,7 +78,7 @@ theme = "raditian-free-hugo-mod"
 
 
 [params]
-  sections = ["home", "about", "projects", "blog"]
+  sections = ["home", "about", "projects", "blog-projects"]
 
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
 
